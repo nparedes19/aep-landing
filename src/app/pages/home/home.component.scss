@@ -1,0 +1,47 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  .content{
+    background-color: gray;
+    .boxPlants{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 100%;
+      }
+      .text-container{
+        display: flex;
+        color: white;
+        font-family: 'Bakung';
+        justify-content: space-between;
+        padding: 0px 160px;
+        position: absolute;
+        width: 100%;
+        .learnMore{
+          color: white;
+        }
+        .native{
+          font-size: 60px;
+        }
+        .plants{
+          font-family: 'Raleway';
+          font-weight: 700;
+          font-size: 45px;
+          font-family: "Raleway";
+          display: block;
+          text-align: center;
+          margin-top: -18px;
+          }
+      }
+    }
+    
+  }
+}
+
+
+

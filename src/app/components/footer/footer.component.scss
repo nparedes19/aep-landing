@@ -1,0 +1,31 @@
+footer {
+  background-color: #1e1e1a;
+  color: #eee;
+  padding: 50px;
+  padding-right: 0px !important;
+  .logoContainer{
+    width: 25%;
+    img{
+      width: 170px;
+      display: flex;
+      margin: auto;
+    }
+  }
+  .contactContainer{
+    width: 75%;
+    .title{
+      font-family: 'Raleway';
+      font-weight: 700;
+    }
+    .line{
+        border-bottom: 1px solid white;
+    }
+    i {
+        font-size: 23px;
+        margin-right: 7px;
+
+    }
+  }
+
+  
+}
