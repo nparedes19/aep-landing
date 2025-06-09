@@ -1,6 +1,107 @@
 <section class="page-container">
     <app-header></app-header>
     <main class="content">
+        <div class="boxPictures">
+
+        </div>
+        <div class="boxInformation">
+            <div class="w-100 firstBox">
+                <p class="bigTextBakung white w-50">We are an architecture
+                    firm committed to
+                    creating unique and
+                    functional spaces.</p>
+                <div class="lineGeneral"></div>
+            </div>
+            <div class="w-50 secondBox">
+                <p class="textInfoGeneral white">We design spaces where form, function, and
+                    nature coexist in harmony. Our approach blends
+                    conscious architecture with sustainable
+                    landscaping, using native plants and timeless
+                    materials that respect the local environment. Every
+                    project is a balance of beauty, identity, and
+                    durability.</p>
+            </div>
+            
+        </div>
+        <div class="boxPresentation clear-blue-background d-flex">
+            <div class="boxPicture w-50">
+
+            </div>
+            <div class="boxText w-50">
+                <p class="textName">Hi! I'm Alci!</p>
+                <p class="textInfo">
+                    I'm a Colombian architect and designer based in
+                    Austin, Texas. I graduated in 2015 from Universidad
+                    San Buenaventura in Cali, Colombia, and have
+                    since dedicated my career to creating thoughtful,
+                    functional spaces through both residential and
+                    commercial projects.
+                </p>
+                <a href="/portfolio" class="d-flex learnMore black">Learn more</a>
+            </div>
+
+        </div>
+        <div class="boxPortfolio">
+            <div class="boxImage">
+                <p class="home-titles white mb-0 portfolio-text">Portfolio</p>
+                <img src="assets/portfolio.png">
+                <a href="/portfolio" class="learn-more d-flex subtitles-general white portfolioLearn">Learn more</a>
+            </div>
+        </div>
+        <div class="boxServices">        
+            <div class="containerBoxes">
+                <p class="home-titles ml-3 title-services">Our Services</p>
+                <div class="d-flex">
+                    <div class="firstBox">
+                        <div class="secondBox">
+                            <p class="home-numbers mb-0">1</p>
+                            <p class="home-subtitles-services mb-0 mt-3">Architectural Design</p>
+                            <p class="home-text-services mb-0 mt-2">Creating unique,
+                                personalized, and
+                                efficient spaces</p>
+                        </div>
+                        <p class="mb-0 plus hand white" (click)="goToSection()">+</p>
+                    </div>
+                    <div class="firstBox yellow-background">
+                        <div class="secondBox">
+                            <p class="home-numbers mb-0">2</p>
+                            <p class="home-subtitles-services mb-0 m-12">Construction and Renovation</p>
+                            <p class="home-text-services mb-0 mt-2">Comprehensive development of residential and commercial projects.</p>
+                        </div>
+                        <p class="mb-0 plus hand" (click)="goToSection()">+</p>
+                    </div>
+                    <div class="firstBox orange-background">
+                        <div class="secondBox">
+                            <p class="home-numbers mb-0">3</p>
+                            <p class="home-subtitles-services mb-0">3D Rendering and Visualization</p>
+                            <p class="home-text-services mb-0 mt-2">Realistic presentation
+                                of your project before
+                                construction.</p>
+                        </div>
+                        <p class="mb-0 plus hand white" (click)="goToSection()">+</p>
+                    </div>
+                    <div class="firstBox clear-blue-background">
+                        <div class="secondBox">
+                            <p class="home-numbers mb-0">4</p>
+                            <p class="home-subtitles-services mb-0 mt-2">Consulting and Planning</p>
+                            <p class="home-text-services mb-0 mt-2">Resource optimization for effective execution.</p>
+                        </div>
+                        <p class="mb-0 plus hand white" (click)="goToSection()">+</p>
+                    </div>
+                    <div class="firstBox strong-blue-background">
+                        <div class="secondBox">
+                            <p class="home-numbers mb-0">5</p>
+                            <p class="home-subtitles-services mb-0 mt-3">Native Plants</p>
+                            <p class="home-text-services mb-0 mt-2">Delivery in Austin &
+                                Surrounding Areas,
+                                Hassle Free and Local.</p>
+                        </div>
+                        <p class="mb-0 plus hand white" (click)="goToSection()">+</p>
+                    </div>
+                </div>
+            </div>
+            <a href="/services" class="mt-5 learn-more d-flex subtitles-general black justify-content-center">Learn more</a>
+        </div>
         <div class="boxPlants">
             <img src="assets/fondo_plants.png">
             <div class="text-container">
@@ -9,10 +110,9 @@
                     <h1 class="native">Native</h1>
                     <h1 class="plants">Plants</h1>
                 </div>
-                <a href="/plants" class="learn-more d-flex my-auto subtitles-general learnMore">Learn more</a>
+                <a href="/plants" class="learn-more d-flex my-auto subtitles-general white">Learn more</a>
             </div>
         </div>
-        
     </main>
     <app-footer></app-footer>
 </section>

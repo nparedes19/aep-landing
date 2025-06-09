@@ -165,8 +165,83 @@ html, body {
 }
 
 .subtitles-general{
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
+}
+
+.home-titles{
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 45px;
+}
+
+.home-numbers{
+  font-family: 'Bakung'; 
+  font-size: 45px;
+}
+
+.home-subtitles-services{
+  font-size: 12px;
+  font-family: "Raleway";
+  font-weight: 800;
+}
+
+.home-text-services{
+  font-size: 11px;
+  font-family: "Raleway";
+  font-weight: 600;
+  line-height: 1.2
+}
+
+.hand{
+  cursor: pointer
+}
+
+.white{
+  color: white
+}
+
+.yellow-background{
+  background-color: #F5BF0A !important;
+}
+
+.orange-background{
+  background-color: #D6660F !important;
+}
+
+.clear-blue-background{
+  background-color: #ABC7BD !important;
+}
+
+.strong-blue-background{
+  background-color: #354B4B !important;
+}
+
+.black{
+  color: black !important
+}
+
+.learnMore{
+  font-family: "Raleway";
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.lineGeneral{
+  border: 1px white solid;
+  width: 100%;
+}
+
+.bigTextBakung{
+  font-family: 'Bakung'; 
+  font-size: 4vw;
+  line-height: 1.2;
+}
+
+.textInfoGeneral{
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 1.5vw;
 }
 
 

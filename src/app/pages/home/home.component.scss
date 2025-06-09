@@ -39,8 +39,108 @@
           }
       }
     }
-    
+    .boxServices{
+      background-color: white;
+      padding: 60px 40px;
+      .containerBoxes{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        .title-services{
+          margin-left: 60px;
+          margin-bottom: 45px;
+        }
+        .firstBox{
+          background-color: black;
+          width: 165px;
+          height: 205px;
+          border-radius: 20px;
+          border: 1px solid black;
+          margin-right: 20px;
+          .plus{
+            width: fit-content;
+            display: flex;
+            margin-left: auto;
+            margin-right: 18px;
+            font-size: 34px;
+            margin-top: -12.8px;
+          }
+          .secondBox{
+            background-color: white;
+            border-radius: 18px;
+            height: 170px;
+            padding: 2px 18px;
+            border-bottom: 1px solid black
+          }
+        }
+      }
+    }
+    .boxPortfolio{
+      background-color: black;
+      .boxImage{
+        padding: 60px 80px;
+        position: relative;
+        .portfolio-text{
+          position: absolute;
+          font-size: 5vw;
+        }
+        .portfolioLearn{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          margin: 0;
+          padding-bottom: 90px;
+          padding-right: 80px;
+          font-size: 2.5vw;
+        }
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .boxPresentation{
+      padding: 80px;
+      .boxText{
+        .textName{
+          font-family: "Raleway";
+          font-weight: 600;
+          font-size: 5vw;
+        }
+        .textInfo{
+          font-family: "Raleway";
+          font-weight: 500;
+          font-size: 1.5vw;
+        }
+      }
+    }
+    .boxInformation{
+      background-color: black;
+      .firstBox{
+        padding-top: 60px;
+        padding-left: 60px;
+        p{
+          margin-bottom: 60px !important;
+        }
+      }
+      .secondBox{
+        padding: 60px;
+        margin-left: auto;
+        p{
+          text-align: right;
+        }
+      }
+    }
+    .boxPictures{
+      height: 500px;
+    }
   }
+}
+
+.m-12{
+  margin-top: -12px;
 }
 
 
