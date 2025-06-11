@@ -1,0 +1,139 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  .content{
+    background-color: gray;
+    .firtsInfo{
+        padding: 8vw;
+        p{
+            font-family: "Raleway";
+            font-weight: 600;
+            font-size: 1.8vw;
+            color: white
+        }
+    }
+    .secondText{
+        background-color: white;
+        padding: 8vw;
+        p{
+            color: #354B4B;
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 1vw;
+        }
+    }
+    .boxDelivery{
+        background-color: white;
+        .boxTitle{
+            border-bottom: 2px solid #354B4B;
+            border-top: 2px solid #354B4B;
+            padding-left: 6vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            p{
+                font-family: "Raleway";
+                font-weight: 600;
+                color: #354B4B;
+                font-size: 3vw;
+            }
+        }
+        .textDelivery{
+            padding: 3vw 6vw;
+            .emailBox{
+                text-align: center;
+                margin-top: 4rem;
+                p{
+                    color:#354B4B;
+                    font-size: 1.5vw !important;
+                }
+            }
+        }
+    }
+    .boxCatalog{
+        background-color: white;
+        .boxTitle{
+            padding-left: 6vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            p{
+                font-family: "Raleway";
+                font-weight: 600;
+                color: white;
+                font-size: 3vw;
+            }
+        }
+        .catalog{
+            padding: 3vw 6vw;
+            .title{
+                color:#354B4B;
+                font-size: 1.5vw !important;
+                font-family: "Raleway";
+                font-weight: 700;
+                display: flex;
+                justify-content: right;
+            }
+        }
+    }
+  }
+}
+
+.boxTitlePlants{
+    width: 100%;
+    border-bottom: 2px solid #354B4B;
+    .titlePlants{
+        font-family: "Raleway";
+        font-weight: 600;
+        color: white;
+        font-size: 2.7vw;
+        color: #354B4B;
+    }
+}
+
+
+
+.carousel-caption-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+}
+.carousel-caption-overlay h5, .carousel-caption-overlay p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.m-20{
+  margin-top: -20px;
+}
+
+.m-8{
+  margin-top: -8px;
+}
+
+.mr-5{
+    margin-right: 5px;
+}
+
+p.con-bullet {
+  display: list-item;
+  list-style-type: disc;       /* tipo de viñeta: círculo (•) */
+  list-style-position: outside;/* pone la viñeta afuera del contenido */
+  margin-left: 1em;            /* deja espacio para la viñeta */
+}
+
+.titleDelivery{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 1vw;
+    color: #354B4B;
+}
+
+.texDelivery{
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 1vw;
+    color: #354B4B;
+}

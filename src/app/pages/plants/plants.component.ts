@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './plants.component.scss'
 })
 export class PlantsComponent {
-
+  public email: string = 'Feel free to reach out at aep.architecture@gmail.com —'
 }
