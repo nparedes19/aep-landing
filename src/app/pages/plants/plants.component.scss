@@ -119,9 +119,9 @@
 
 p.con-bullet {
   display: list-item;
-  list-style-type: disc;       /* tipo de viñeta: círculo (•) */
-  list-style-position: outside;/* pone la viñeta afuera del contenido */
-  margin-left: 1em;            /* deja espacio para la viñeta */
+  list-style-type: disc;       
+  list-style-position: outside;
+  margin-left: 1em;           
 }
 
 .titleDelivery{
@@ -137,3 +137,77 @@ p.con-bullet {
     font-size: 1vw;
     color: #354B4B;
 }
+
+.containerPlants{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+
+    .firstBox{
+        background-color: black;
+        width: 200px;
+        height: 360px;
+        border-radius: 20px;
+        border: 1px solid black;
+        margin-right: 20px;
+        .boxFirstText{
+            padding-left: 15px;
+            padding-top: 10px;
+            .firstText{
+                        font-family: "Raleway";
+                        font-weight: 600;
+                        margin-bottom: 0rem;
+                        color:#354B4B;
+                        font-size: 14px
+                        }
+        }
+        
+        
+        .secondBox{
+            background-color: white;
+            border-radius: 18px;
+            height: 255px;
+            border-bottom: 1px solid black;
+            .textSecond{
+                margin-top: 8px;
+                padding-left: 15px;
+                padding-right: 8px;
+            }
+            .titlePlant{
+                width: 80%;
+                line-height: 1.2;
+                font-family: "Raleway";
+                font-size: 15px;
+                font-weight: 800;
+            }
+            .boxPlus{
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                    i{
+                        display: flex;
+                        color: white;
+                        font-size: 20px;
+                        margin: auto;
+                    }
+            }
+            
+        .thirdBox{
+            height: fit-content;
+            border-top-right-radius: 18px;
+            border-top-left-radius: 18px;
+            border-bottom: 1px solid black;
+           
+            img{
+                width: 100%;
+                border-top-left-radius: 18px;
+                border-top-right-radius: 18px;
+            }
+        }
+    }
+}
+}
+
+

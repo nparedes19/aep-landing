@@ -42,9 +42,10 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/@splidejs/splide/dist/css/splide.min.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ]
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js", "node_modules/@splidejs/splide/dist/js/splide.min.js" ]
           },
           "configurations": {
             "production": {
@@ -104,9 +105,10 @@
             "styles": [
               "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/@splidejs/splide/dist/css/splide.min.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" ]
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js", "node_modules/@splidejs/splide/dist/js/splide.min.js" ]
           }
         }
       }
