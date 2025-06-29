@@ -3,12 +3,22 @@ footer {
   color: #eee;
   padding: 50px;
   padding-right: 0px !important;
+  @media (max-width: 600px){
+    padding: 45px;
+  }
   .logoContainer{
     width: 25%;
+    @media (max-width: 600px){
+      margin-top: 0 !important;
+      margin-bottom: 20px !important;
+    }
     img{
       width: 170px;
       display: flex;
       margin: auto;
+      @media (max-width: 600px){
+        width: 100px;
+      }
     }
   }
   .contactContainer{
@@ -19,6 +29,9 @@ footer {
     }
     .line{
         border-bottom: 1px solid white;
+        @media (max-width: 600px){
+          display: none;
+        }
     }
     i {
         font-size: 23px;
@@ -29,3 +42,22 @@ footer {
 
   
 }
+
+.boxFooter{
+  @media (max-width: 600px){
+    display: block !important;
+  }
+}
+
+.contact{
+  @media (max-width: 600px){
+    margin-bottom: 10px !important;
+  }
+}
+
+.name{
+  @media (max-width: 600px){
+    margin-top: 0px !important;
+  }
+}
+

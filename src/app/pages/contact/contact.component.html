@@ -1,29 +1,51 @@
 <section class="page-container">
     <app-header></app-header>
-    <div class="boxContainer">
-        <p class="title">Contact Us</p>
-        <form >
-            <div class="d-flex">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name">
-            </div>
-            <div class="d-flex">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-            </div>
-            <div class="d-flex">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="number" class="form-control" id="phone">
-            </div>
-            <div class="d-flex message">
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="comentarios" rows="5" cols="40"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btnSend">Send</button>
-        </form>
+    <div class="boxContainer w-100 d-flex">
+        <div class="boxImg w-50">
+            <img src="assets/contact.png" class="w-100" alt="foto-contacto">
+        </div>
+        <div class="w-50 boxForm">
+            <p class="title">Contact Us</p>
+            <form>
+                <div class="d-flex">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="d-flex">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                </div>
+                <div class="d-flex">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="number" class="form-control" id="phone">
+                </div>
+                <div class="d-flex message">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="comentarios" rows="3" cols="40"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btnSend">Send</button>
+            </form>
+        </div>
+
     </div>
     <div class="boxMap d-flex">
-        <div class="containerMap w-50">
+        <div class="containerText">
+            <div class="d-flex mb-3">
+                <i class="fa-solid fa-location-dot white"></i>
+                <p class="mb-0 white firstTitle"> Colombia - Austin, Texas</p>
+            </div>
+            <p class="white secdonTitle mb-0">Option to work on the projects</p>
+            <p class="white secdonTitle">remotely from Austin, Texas.*</p>
+            <!-- <div class="d-flex mt-5 mb-5">
+                <i class="fa-solid fa-phone-volume white"></i>
+                <p class="mb-0 white firstTitle">(512) – 673 – 6336</p>
+            </div> -->
+            <div class="d-flex">
+                <i class="fa-regular fa-envelope white"></i>
+                <p class="mb-0 white firstTitle">{{email}}</p>
+            </div>
+        </div>
+        <div class="containerMap">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220474.95160495403!2d-97.89777847393631!3d30.29630716396138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20Texas%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sco!4v1750003308593!5m2!1ses-419!2sco" 
                     width="600" 
                     height="450" 
@@ -33,22 +55,7 @@
                     referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
-        <div class="containerText">
-            <div class="d-flex mb-3">
-                <i class="fa-solid fa-location-dot white"></i>
-                <p class="mb-0 white firstTitle"> Colombia - Austin, Texas</p>
-            </div>
-            <p class="white secdonTitle mb-0">Option to work on the projects</p>
-            <p class="white secdonTitle">remotely from Austin, Texas.*</p>
-            <div class="d-flex mt-5 mb-5">
-                <i class="fa-solid fa-phone-volume white"></i>
-                <p class="mb-0 white firstTitle">(512) – 673 – 6336</p>
-            </div>
-            <div class="d-flex">
-                <i class="fa-regular fa-envelope white"></i>
-                <p class="mb-0 white firstTitle">{{email}}</p>
-            </div>
-        </div>
+
     </div>
     <div class="boxConversation">
         <p class="title">Let’s Start a Conversation</p>
@@ -58,8 +65,6 @@
         <p class="text white mt-5">Feel free to reach out through the contact form, phone, or email. We look forward to discussing 
             how we can bring your architectural vision to life.</p>   
     </div>
-    <div class="boxImg">
-        <img src="assets/contact.png" class="d-block w-100" alt="foto-contacto">
-    </div>
+    
     <app-footer></app-footer>
 </section>
