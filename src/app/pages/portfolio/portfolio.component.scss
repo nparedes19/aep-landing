@@ -1,0 +1,93 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E1E1A;
+  .content{
+    .textBox{
+        background-color: #1E1E1A;
+        padding: 150px;
+        p{
+            line-height: 1.2;
+            color: white
+        }
+    }
+    .boxProjects{
+        padding-left: 60px;
+        padding-right: 60px;
+        height: auto;
+        .project{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-auto-rows: 1fr;
+          align-items: stretch;
+          grid-auto-rows: minmax(auto, 1fr);
+          .boxInfo{
+              background-color: white;
+              padding: 2.5vw;
+              display: flex;
+              flex-direction: column;
+              height: 100%;
+              justify-content: center;
+              @media (max-width: 1270px) {
+                  padding: 1.5vw;
+              }         
+              .titleInfo{
+                font-family: "Raleway";
+                font-weight: 800;
+                font-size: 2vw;
+              }
+              .secondText{
+                overflow-y: auto;
+                .info{
+                  font-family: "Raleway";
+                  font-weight: 400;
+                  font-size: 1vw;
+                  overflow-y: auto;
+                  margin-bottom: 0px !important;
+                }
+              }
+              
+          }
+        }
+        
+    }
+    .finalText{
+      padding: 150px;
+      p{
+        font-family: 'Bakung'; 
+        font-size: 5.2vw;
+        line-height: 1;
+        color: white;
+        text-align: center;
+      }
+      .line{
+        border-bottom: 1px solid white;
+        display: flex;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+.carousel-caption-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white; 
+}
+.carousel-caption-overlay h5, .carousel-caption-overlay p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+}
+
+.marginb-60{
+  margin-bottom: 60px;
+}
+
+
+
