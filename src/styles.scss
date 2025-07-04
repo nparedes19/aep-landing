@@ -238,6 +238,12 @@ html, body {
   line-height: 1.2;
 }
 
+.mediumTextBakung{
+  font-family: 'Bakung'; 
+  font-size: 3.5vw;
+  line-height: 1.2;
+}
+
 .textInfoGeneral{
   font-family: "Raleway";
   font-weight: 400;
@@ -266,5 +272,17 @@ html, body {
 
 .w-30{
   width: 30% !important;
+}
+
+.bigExtraBoldRaleway{
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 5vw;
+}
+
+.textMediumRaleway{
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 2vw;
 }
 

@@ -1,0 +1,102 @@
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E1E1A;
+  .content{
+    .boxGif{
+        align-items: center;
+        justify-content: center;
+        padding: 80px;
+        img{
+            width: 25%;;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+    }
+    .containerServices{
+        padding: 80px;
+        .textService{
+            color: white;
+            width: 85%;
+            display: flex;
+            text-align: center;
+            margin-bottom: 80px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .boxServices{
+        .containerBoxes{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            .title-services{
+            margin-left: 60px;
+            margin-bottom: 45px;
+            }
+            .firstBox{
+            background-color: black;
+            width: 165px;
+            height: 205px;
+            border-radius: 20px;
+            border: 1px solid black;
+            margin-right: 20px;
+            .plus{
+                width: fit-content;
+                display: flex;
+                margin-left: auto;
+                margin-right: 18px;
+                font-size: 34px;
+                margin-top: -12.8px;
+            }
+            .secondBox{
+                background-color: white;
+                border-radius: 18px;
+                height: 170px;
+                padding: 2px 18px;
+                border-bottom: 1px solid black
+            }
+            }
+        }
+        }
+        .textSecondService{
+            color: white;
+            width: 70%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.2;
+            margin-top: 80px;
+            text-align: center;
+        }
+        .btnSend{
+            background-color: transparent !important;
+            font-family: "Raleway";
+            font-size: 1.5vw;
+            border-radius: 999px;
+            padding: 10px 30px;
+            font-weight: 600;
+            border: 1px solid white;
+            margin-top: 30px;
+            display: flex;
+            color: white;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+        }
+    }
+  }
+}
+
+.carousel-caption-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white; 
+}
