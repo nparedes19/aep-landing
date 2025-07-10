@@ -4,12 +4,10 @@
   flex-direction: column;
   background-color: #1E1E1A;
   .boxContainer{
-    margin-top: 170px;
     padding-right: 60px;
     padding-bottom: 60px;
     @media (max-width: 600px){
         display: block !important;
-        margin-top: 70px;
         padding-right: 0px !important;
     }
     
@@ -166,14 +164,15 @@
     padding-left: 90px;
     padding-right: 60px;
     padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 170px;
     @media (max-width: 600px){
         padding: 45px;
+        padding-top: 80px;
     }
     .title{
         font-family: "Raleway";
         font-weight: 600;
-        font-size: 4vw;
+        font-size: 3vw;
         color: white;
         margin-bottom: 2rem;
         @media (max-width: 600px){

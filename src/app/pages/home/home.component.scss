@@ -153,10 +153,12 @@
         left: 0;
         right: 0;
         bottom: 0;
-        color: white; /* Color del texto */
-        /* Opcional: un fondo semitransparente para que el texto resalte más */
-        /* background-color: rgba(0, 0, 0, 0.4); */
-      }
+        color: white;
+}
+
+.w-60{
+  width: 60%;
+}
 
 
 
