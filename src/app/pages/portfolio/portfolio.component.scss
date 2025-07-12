@@ -4,6 +4,11 @@
   flex-direction: column;
   background-color: #1E1E1A;
   .content{
+    .boxPictures{
+      @media (max-width: 600px){
+           margin-top: 65px;
+      }
+    }
     .textBox{
         background-color: #1E1E1A;
         padding: 150px;
@@ -15,6 +20,10 @@
     .boxProjects{
         padding-left: 60px;
         padding-right: 60px;
+        @media (max-width: 600px){
+           padding-left: 0px;
+           padding-right: 0px;
+        }
         height: auto;
         .project{
           display: grid;
@@ -22,6 +31,9 @@
           grid-auto-rows: 1fr;
           align-items: stretch;
           grid-auto-rows: minmax(auto, 1fr);
+          @media (max-width: 600px){
+              display: block !important;
+          }
           .boxInfo{
               background-color: white;
               padding: 2.5vw;
@@ -31,11 +43,17 @@
               justify-content: center;
               @media (max-width: 1270px) {
                   padding: 1.5vw;
+              }
+              @media (max-width: 600px){
+                  padding: 20px
               }         
               .titleInfo{
                 font-family: "Raleway";
                 font-weight: 800;
                 font-size: 2vw;
+                @media (max-width: 600px){
+                    font-size: 16px;
+                }
               }
               .secondText{
                 overflow-y: auto;
@@ -45,6 +63,9 @@
                   font-size: 1vw;
                   overflow-y: auto;
                   margin-bottom: 0px !important;
+                  @media (max-width: 600px){
+                    font-size: 11px;
+                  }
                 }
               }
               
@@ -54,6 +75,9 @@
     }
     .finalText{
       padding: 150px;
+      @media (max-width: 600px){
+          padding: 40px
+      } 
       p{
         font-family: 'Bakung'; 
         font-size: 5.2vw;
@@ -68,6 +92,9 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 80px;
+        @media (max-width: 600px){
+          margin-top: 40px
+        } 
       }
     }
   }
@@ -85,6 +112,19 @@
 
 .marginb-60{
   margin-bottom: 60px;
+}
+
+.mobile{
+  display: none !important;
+  @media (max-width: 600px){
+    display: block !important;
+  } 
+}
+
+.desktop{
+   @media (max-width: 600px){
+    display: none !important;
+  } 
 }
 
 
