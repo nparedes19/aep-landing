@@ -63,6 +63,9 @@
               ],
               "outputHashing": "all"
             },
+            "github-pages": { 
+              "baseHref": "/aep_landing/"
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
@@ -109,6 +112,12 @@
               "node_modules/@splidejs/splide/dist/css/splide.min.css"
             ],
             "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js", "node_modules/@splidejs/splide/dist/js/splide.min.js" ]
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/aep_landing/"
           }
         }
       }
