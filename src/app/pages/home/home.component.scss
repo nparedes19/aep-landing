@@ -300,6 +300,19 @@
   font-size: 25px !important;
 }
 
+.desktopPlants{
+  @media (max-width: 600px){
+     display: none !important;
+  }
+}
+
+.mobilePlants{
+  display: none !important;
+  @media (max-width: 600px){
+     display: flex !important;
+  }
+}
+
 
 
 
