@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import Splide from '@splidejs/splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 @Component({
   selector: 'app-services',
@@ -7,5 +9,24 @@ import { Component } from '@angular/core';
   styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
+  
+    ngAfterViewInit() {
+    setTimeout(() => {
+    this.initSplide();
+  }, 50);
+  }
 
+  
+  initSplide() {
+    const splide = new Splide( '.splide', {
+        type   : 'loop',
+        drag   : 'free',
+        focus  : 'center',
+        perPage: 4,
+        autoScroll: {
+          speed: -1,
+        },
+      } );
+      splide.mount({ AutoScroll });
+    }
 }

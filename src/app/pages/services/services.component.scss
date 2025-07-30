@@ -5,19 +5,26 @@
   background-color: #1E1E1A;
   .content{
     .boxGif{
-        align-items: center;
-        justify-content: center;
-        padding: 80px;
         display: flex;
         flex-direction: column;
-        img{
-            width: 25%;;
-            margin-left: 50px;
-            margin-right: 50px;
+        p{
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem !important;
+            @media (max-width: 600px){
+               font-size: 35px;
+               margin-top: 40px;
+                margin-bottom: 40px !important;
+            }
         }
     }
     .containerServices{
         padding: 80px;
+         @media (max-width: 600px){
+            padding: 40px;
+        }
         .textService{
             color: white;
             width: 85%;
@@ -26,6 +33,12 @@
             margin-bottom: 80px;
             margin-left: auto;
             margin-right: auto;
+            @media (max-width: 600px){
+                font-size: 25px;
+                text-align: left;
+                width: 100%;
+                margin-bottom: 30px;
+            }
         }
         .boxServices{
         .containerBoxes{
@@ -35,17 +48,27 @@
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
+            @media (max-width: 600px){
+                margin-left: 0px;
+                margin-right: 0px;
+                width: 100%;
+            }
             .title-services{
             margin-left: 60px;
             margin-bottom: 45px;
             }
             .firstBox{
-            background-color: black;
-            width: 165px;
-            height: 205px;
-            border-radius: 20px;
-            border: 1px solid black;
-            margin-right: 20px;
+                background-color: black;
+                width: 165px;
+                height: 205px;
+                border-radius: 20px;
+                border: 1px solid black;
+                margin-right: 20px;
+                @media (max-width: 600px){
+                    width: 148px;
+                    margin-right: 0px;
+                    height: 190px;
+                }
             .plus{
                 width: fit-content;
                 display: flex;
@@ -59,7 +82,10 @@
                 border-radius: 18px;
                 height: 170px;
                 padding: 2px 18px;
-                border-bottom: 1px solid black
+                border-bottom: 1px solid black;
+                @media (max-width: 600px){
+                    height: 160px;
+                }
             }
             }
         }
@@ -73,6 +99,11 @@
             line-height: 1.2;
             margin-top: 80px;
             text-align: center;
+            @media (max-width: 600px){
+                margin-top: 30px;
+                width: 100%;
+                font-size: 15px !important
+            }
         }
         .btnSend{
             background-color: transparent !important;
@@ -89,10 +120,21 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 80px;
+             @media (max-width: 600px){
+                margin-top: 30px;
+                font-size: 15px !important;
+                width: 100%;
+                justify-content: center;
+            }
         }
     }
     .containerSpaces{
         padding-top: 80px;
+        @media (max-width: 600px){
+         padding-top: 50px;
+         padding-left: 40px;
+        padding-right: 40px;
+        }
         .btnSend{
             background-color: transparent !important;
             font-family: "Raleway";
@@ -106,6 +148,12 @@
             display: flex;
             margin-left: auto;
             margin-right: auto;
+            @media (max-width: 600px){
+                font-size: 20px !important;
+                line-height: 1.2;
+                width: 100%;
+                justify-content: center;
+            }
 
         }
         .firstBox{
@@ -217,6 +265,51 @@
 .pb-80{
    padding-bottom: 80px;
 }
+
+.desktop{
+  @media (max-width: 600px){
+     display: none !important;
+  }
+}
+
+.mobile{
+  display: none;
+  @media (max-width: 600px){
+     display: block;
+  }
+}
+
+.home-numbers{
+  @media (max-width: 600px){
+     font-size: 35px;
+  }
+}
+
+.home-subtitles-services {
+ @media (max-width: 600px){
+     font-size: 11px;
+     line-height: 1.2;
+  }
+}
+
+.lastService{
+  display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto !important;
+}
+
+.justify{
+  justify-content: space-between;
+}
+
+.imgCarrusel{
+    @media (max-width: 600px){
+     width: 170px !important;
+  }
+}
+
+
 
 
 
