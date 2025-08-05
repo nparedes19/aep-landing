@@ -172,7 +172,7 @@
                 </div>
             </div>
             <p class="textSecondService textMediumRaleway">Let us bring your vision to life. Contact us today and book a Design Consultation.</p>
-            <button type="submit" class="btn btn-primary btnSend">Your next project starts here!</button>
+            <button type="submit" class="btn btn-primary btnSend" routerLink="/contact">Your next project starts here!</button>
         </div>
         <div class="boxGif clear-blue-background">
             <p class="bigExtraBoldRaleway mb-0">Design Solutions</p>
@@ -194,7 +194,7 @@
             </section>
         </div>
         <div class="containerSpaces clear-blue-background">
-            <button type="submit" class="btn btn-primary btnSend">Spaces with essence that reflect your lifestyle</button>
+            <button type="submit" class="btn btn-primary btnSend" routerLink="/contact">Spaces with essence that reflect your lifestyle</button>
             <div class="firstBox d-flex desktop">
                 <div class="boxText">
                     <p class="learnMore ml-3">REMOTE WORK</p>
@@ -349,7 +349,7 @@
                         <i class="pi pi-plus-circle" ></i>
                     </div>
                 </div>
-                <button class="btn-schedule">Schedule a Design Consultation</button>
+                <button class="btn-schedule" routerLink="/contact">Schedule a Design Consultation</button>
             </div>
 
         </div>
@@ -359,7 +359,7 @@
                 <p class="biggerTextBakung mb-0 titlesGeneralServices">What to Expect During the Design and Construction Process?</p>
                 <div class="lineGeneral firstLine"></div>
                 <p class="learnMore titleProcess">Residential and commercial projects.</p>
-                <div class="steps-container">
+                <div class="steps-container" *ngIf="!isSecondInfo" (click)="secondInfo()">
                     <div class="step">
                         <p class="textInfoGeneralBold">Initial Consultation</p>
                         <p class="textInfoGeneral mt-3">We start by understanding 
@@ -382,9 +382,11 @@
                             your requirements.</p>
                     </div>
                     <i class="pi pi-chevron-right" style="font-size: 1.5rem; align-content: center"></i>
-                    <!-- <div class="step">
+                </div>
+                <div class="steps-container" (click)="secondInfo()" *ngIf="isSecondInfo">
+                    <i  class="pi pi-chevron-left" style="font-size: 1.5rem; align-content: center"></i>
+                    <div class="step">
                         <p class="textInfoGeneralBold">Planning and Approvals</p>
-                        <div class="lineGeneral"></div>
                         <p class="textInfoGeneral mt-3">Once the design is 
                             finalized, we handle the 
                             planning, permitting, and 
@@ -396,7 +398,6 @@
                     </div>
                     <div class="step">
                         <p class="textInfoGeneralBold">Construction Phase</p>
-                        <div class="lineGeneral"></div>
                         <p class="textInfoGeneral mt-3">After the permits are secured, 
                             construction begins. We 
                             coordinate with contractors, 
@@ -405,10 +406,10 @@
                             project is executed as 
                             planned, maintaining quality 
                             and meeting deadlines.</p>
-                        <i class="pi pi-plus-circle" ></i>
-                    </div> -->
+                        <!-- <i class="pi pi-plus-circle" ></i> -->
+                    </div>
                 </div>
-                <button class="btn-schedule">Schedule a Design Consultation</button>
+                <button class="btn-schedule" routerLink="/contact">Schedule a Design Consultation</button>
             </div>
 
         </div>

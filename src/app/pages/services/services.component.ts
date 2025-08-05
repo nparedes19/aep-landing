@@ -9,6 +9,8 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
   styleUrl: './services.component.scss'
 })
 export class ServicesComponent {
+
+  isSecondInfo: boolean = false
   
     ngAfterViewInit() {
     setTimeout(() => {
@@ -29,4 +31,8 @@ export class ServicesComponent {
       } );
       splide.mount({ AutoScroll });
     }
+
+  secondInfo(){
+    this.isSecondInfo = !this.isSecondInfo
+  }
 }
