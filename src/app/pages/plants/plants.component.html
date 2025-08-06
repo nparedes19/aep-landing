@@ -1,7 +1,7 @@
 <section class="page-container">
     <app-header></app-header>
     <main class="content">
-        <div class="boxPictures">
+        <div class="boxPictures desktop">
             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -36,17 +36,53 @@
                 </button>
                 </div>
         </div>
+        <div class="boxPictures mobile">
+            <div id="carouselExampleRide1" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/mobile/banner1.jpg" class="d-block w-100" alt="Primera foto del carrusel">
+                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
+                            <h5 class="biggerTextBakung mb-0 titleMobile">Native</h5>
+                            <p class="bigRaleway m-20 secondTextMobile">Plants</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/mobile/banner2.jpg" class="d-block w-100" alt="Primera foto del carrusel">
+                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
+                            <h5 class="biggerTextBakung mb-0 titleMobile">Native</h5>
+                            <p class="bigRaleway m-20 secondTextMobile">Plants</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/mobile/banner3.jpg" class="d-block w-100" alt="Primera foto del carrusel">
+                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
+                            <h5 class="biggerTextBakung mb-0 titleMobile">Native</h5>
+                            <p class="bigRaleway m-20 secondTextMobile">Plants</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </div>
         <div class="firtsInfo strong-blue-background">
-            <p>A place to rest, to breathe, to simply</p>
-            <p>be right outside your door.</p>
-            <p>AEP can design and build it with care.</p>
+            <p class="desktop">A place to rest, to breathe, to simply</p>
+            <p class="desktop">be right outside your door.</p>
+            <p class="desktop">AEP can design and build it with care.</p>
+            <p class="mobile">A place to rest, to breathe, to simply be right outside your door. AEP can design and build it with care.</p>
         </div>
         <div class="gardenBox">
             <div class="d-flex containerImg">
                 <img src="assets/PLANTS-2.jpg" alt="garden">
                 <div class="textGarden">
                     <p class="titleGarden">More than just a pretty yard</p>
-                    <div class="lineGeneralBlack"></div>
+                    <div class="lineGeneralBlack lineLeft"></div>
                     <p class="textInfoGeneral mt-4">We believe landscapes should do more than look good. 
                         They should feel right, support life, and reflect a deeper 
                         connection to place.<br>
@@ -56,9 +92,10 @@
                 </div>
             </div>
             <div class="pt-0 d-flex containerImg">
+                <img class="mobile" src="assets/PLANTS-1.jpg" alt="garden">
                 <div class="textGarden secondTextGarden">
-                    <p class="titleGarden">Design & Build</p>
-                    <div class="lineGeneralBlack"></div>
+                    <p class="titleGarden" id="titleLeft">Design & Build</p>
+                    <div class="lineGeneralBlack lineRight"></div>
                     <p class="textInfoGeneral mt-4 pr-2">From that first idea to planting the last native flower, we handle 
                         every step with care and intention so your landscape feels as 
                         good as it looks.</p>
@@ -70,10 +107,10 @@
                     <p class="textInfoGeneral mt-2 mb-0">* We’ll find your plants and get them in the ground</p>
                     <p class="textInfoGeneral mt-2 mb-0 pr-2">* Seasonal care plan so your landscape keeps growing strong</p>
                 </div>
-                <img src="assets/PLANTS-1.jpg" alt="garden">
+                <img class="desktop" src="assets/PLANTS-1.jpg" alt="garden">
             </div>
         </div>
-        <div class="boxPhoto">
+        <div class="boxPhoto desktop">
             <img src="assets/BANNER_PLANTS.jpg" class="w-100">
             <div class="overlayText">
                 <P class="titlePhoto">Book your consultation design
@@ -85,10 +122,22 @@
                     timeline or price tag.</P>
             </div>
         </div>
+        <div class="boxPhoto mobile">
+            <img src="assets/mobile/Banner-plants-mobile-abajo.jpg" class="w-100">
+            <div class="overlayText">
+                <P class="titlePhoto">Book your consultation design
+                    A Small Update Can Go a Long Way
+                    Looking to freshen things up?</P>
+                <P class="textInfoGeneral mt-4 textPhoto">You don’t need a big renovation to make your outdoor space feel special. A few thoughtful 
+                    touches like a native plant nook, seasonal blooms, or refreshed soil can bring new life and joy.
+                    Our Fresh Touch Projects are designed for those who want meaningful changes without the big 
+                    timeline or price tag.</P>
+            </div>
+        </div>
         <div class="gardenBox">
             <div class="d-flex containerImg">
                 <img src="assets/garden_last.jpg" alt="garden">
-                <div class="textGarden">
+                <div class="textGarden" id="second">
                     <p class="titleGarden">Some ways we can help:</p>
                     <p class="textInfoGeneral mb-0">* Reimagining existing garden beds</p>
                     <p class="textInfoGeneral mt-2 mb-0">* Custom garden plans you can build yourself</p>
@@ -143,21 +192,30 @@
                     <p class="mb-0 texDelivery"> $25 for deliveries within Austin city limits.</p>
                 </div>
                 <p class="texDelivery italic">Outside Austin? No problem—we offer custom delivery rates.</p>
-                <div class="d-flex mb-4">
+                <div class="d-flex mb-4 desktop">
                     <p class="mb-0 mr-5 titleDelivery">Scheduling:</p>
                     <p class="mb-0 texDelivery">We deliver Monday through Saturday, usually within 48 hours of your order.</p>
+                </div>
+                <div class="d-flex mb-4 mobile">
+                    <p class="mb-0 texDelivery"><span class="mb-0 mr-5 titleDelivery" >Scheduling:</span>We deliver Monday through Saturday, usually within 48 hours of your order.</p>
                 </div>
                 <div class="mb-4">
                     <p class="mb-0 mr-5 con-bullet titleDelivery">Looking for Something Specific or Need Design Help?</p>
                     <p class="mb-0 texDelivery">We’re happy to help you find the right plant or guide you with your landscape design.</p>
                 </div>
-                <div class="d-flex mb-4">
+                <div class="d-flex mb-4 desktop">
                     <p class="mb-0 mr-5 con-bullet titleDelivery">Can’t find what you’re looking for?</p>
                     <p class="mb-0 texDelivery">Let us know and we’ll do our best to track it down.</p>
                 </div>
-                <div class="d-flex mb-4">
+                <div class="d-flex mb-4 mobile">
+                    <p class="mb-0 texDelivery"><span class="mb-0 mr-5 con-bullet titleDelivery">Can’t find what you’re looking for?</span>Let us know and we’ll do our best to track it down.</p>
+                </div>
+                <div class="d-flex mb-4 desktop">
                     <p class="mb-0 mr-5 con-bullet titleDelivery">Need design support?</p>
                     <p class="mb-0 texDelivery">We’ll help you plan a space that feels right and looks beautiful.</p>
+                </div>
+                <div class="d-flex mb-4 mobile">
+                    <p class="mb-0 texDelivery"><span class="mb-0 mr-5 con-bullet titleDelivery">Need design support?</span>We’ll help you plan a space that feels right and looks beautiful.</p>
                 </div>
                 <div class="mt-6 emailBox">
                     <p class="mb-0 learnMore italic">{{email}}</p>
@@ -170,7 +228,7 @@
                 <p class="d-flex my-auto">Catalog:</p>
             </div>
             <div class="catalog">
-                <p class="title">Native Plants and Design</p>
+                <p class="title desktop">Native Plants and Design</p>
                 <div class="boxTitlePlants">
                     <p class="titlePlants">Perennials</p>
                 </div>

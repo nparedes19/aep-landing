@@ -7,6 +7,9 @@
     background-color: gray;
     .firtsInfo{
         padding: 7vw;
+        @media (max-width: 600px){
+           padding: 60px;
+        }
         p{
             font-weight: 500;
             color: white;
@@ -14,15 +17,35 @@
             font-size: 3vw;
             text-align: center;
             line-height: 1;
+            @media (max-width: 600px){
+                font-size: 20px;
+                margin-bottom: 0px;
+                line-height: 1.2;
+            }
+            
         }
     }
     .gardenBox{
         background-color: white;
         padding-bottom: 60px;
+        @media (max-width: 600px){
+            padding-bottom: 20px;
+        }
         .containerImg{
             padding: 10vw;
+             @media (max-width: 600px){
+                display: block !important;
+                padding: 60px;
+                padding-bottom: 30px;
+             }
             img{
                 width: 40%;
+            @media (max-width: 600px){
+                width: 85%;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+             }
             }
             .textGarden{
                 justify-content: center;
@@ -30,17 +53,29 @@
                 flex-direction: column;
                 p{
                     margin-left: 80px;
+                    @media (max-width: 600px){
+                        margin-left: 0px;
+                    }
                 }
                 .titleGarden{
                     font-family: "Raleway";
                     font-weight: 600;
                     font-size: 3vw;
+                    @media (max-width: 600px){
+                        font-size: 20px;
+                        margin-top: 1rem ;
+                    }
                 }
             }
             .secondTextGarden{
                 p{
                     margin-left: 0px !important;
                     padding-right: 15px;
+                    @media (max-width: 600px){
+                        padding-right: 0px;
+                        text-align: right;
+                        margin-bottom: 0rem !important;
+                    }
                 }
             }
         }
@@ -62,6 +97,9 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                 @media (max-width: 600px){
+                    padding: 40px;
+                }
                 .titlePhoto{
                     font-weight: 500;
                     color: white;
@@ -73,16 +111,26 @@
                     display: flex;
                     margin-left: auto;
                     margin-right: auto;
+                    @media (max-width: 600px){
+                        width: 90%;
+                        font-size: 20px;
+                    }
                 }
         }
     }
     .secondText{
         background-color: white;
         padding: 8vw;
+        @media (max-width: 600px){
+            padding: 60px;
+        }
         p{
             color: #354B4B;
             font-family: "Raleway";
             font-weight: 500;
+             @media (max-width: 600px){
+                font-size: 11px;
+            }
         }
     }
     .boxDelivery{
@@ -93,21 +141,38 @@
             padding-left: 6vw;
             padding-top: 1vw;
             padding-bottom: 1vw;
+            @media (max-width: 600px){
+                padding-left: 40px;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
+            }
             p{
                 font-family: "Raleway";
                 font-weight: 600;
                 color: #354B4B;
                 font-size: 3vw;
+                @media (max-width: 600px){
+                    font-size: 20px;
+                }
             }
         }
         .textDelivery{
             padding: 3vw 6vw;
+            @media (max-width: 600px){
+                padding: 40px ;
+            }
             .emailBox{
                 text-align: center;
                 margin-top: 4rem;
+                @media (max-width: 600px){
+                    margin-top: 10px;
+                }
                 p{
                     color:#354B4B;
                     font-size: 1.5vw !important;
+                    @media (max-width: 600px){
+                        font-size: 15px !important ;
+                    }
                 }
             }
         }
@@ -118,15 +183,26 @@
             padding-left: 6vw;
             padding-top: 1vw;
             padding-bottom: 1vw;
+            @media (max-width: 600px){
+                padding-left: 40px;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
+            }
             p{
                 font-family: "Raleway";
                 font-weight: 600;
                 color: white;
                 font-size: 3vw;
+                @media (max-width: 600px){
+                    font-size: 20px;
+                }
             }
         }
         .catalog{
             padding: 3vw 6vw;
+            @media (max-width: 600px){
+                padding: 40px;
+            }
             .title{
                 color:#354B4B;
                 font-size: 1.5vw !important;
@@ -149,6 +225,9 @@
         color: white;
         font-size: 2.7vw;
         color: #354B4B;
+        @media (max-width: 600px){
+            font-size: 20px;
+        }
     }
 }
 
@@ -166,6 +245,9 @@
 
 .m-20{
   margin-top: -20px;
+  @media (max-width: 600px){
+     margin-top: -5px;
+  }
 }
 
 .m-8{
@@ -188,6 +270,9 @@ p.con-bullet {
     font-weight: 700;
     font-size: 1.5vw;
     color: #354B4B;
+    @media (max-width: 600px){
+        font-size: 11px;
+    }
 }
 
 .texDelivery{
@@ -195,6 +280,9 @@ p.con-bullet {
     font-weight: 400;
     font-size: 1.5vw;
     color: #354B4B;
+     @media (max-width: 600px){
+        font-size: 11px;
+    }
 }
 
 .containerPlants{
@@ -202,6 +290,10 @@ p.con-bullet {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
+    @media (max-width: 600px){
+      grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+      gap: 25px;
+    }
 
     .firstBox{
         background-color: black;
@@ -210,16 +302,23 @@ p.con-bullet {
         border-radius: 20px;
         border: 1px solid black;
         margin-right: 20px;
+        @media (max-width: 600px){
+            width: 150px;
+            height: 300px;
+        }
         .boxFirstText{
             padding-left: 15px;
             padding-top: 10px;
             .firstText{
-                        font-family: "Raleway";
-                        font-weight: 600;
-                        margin-bottom: 0rem;
-                        color:#354B4B;
-                        font-size: 14px
-                        }
+                font-family: "Raleway";
+                font-weight: 600;
+                margin-bottom: 0rem;
+                color:#354B4B;
+                font-size: 14px;
+                @media (max-width: 600px){
+                    font-size: 11px;
+                }
+                }
         }
         
         
@@ -228,6 +327,9 @@ p.con-bullet {
             border-radius: 18px;
             height: 255px;
             border-bottom: 1px solid black;
+            @media (max-width: 600px){
+                height: 205px;
+            }
             .textSecond{
                 margin-top: 8px;
                 padding-left: 15px;
@@ -239,17 +341,27 @@ p.con-bullet {
                 font-family: "Raleway";
                 font-size: 15px;
                 font-weight: 800;
+                @media (max-width: 600px){
+                    font-size: 11px;
+                }
             }
             .boxPlus{
                 border-radius: 50%;
                 height: 30px;
                 width: 30px;
                 display: flex;
+                @media (max-width: 600px){
+                    height: 20px;
+                    width: 20px;
+                }
                     i{
                         display: flex;
                         color: white;
                         font-size: 20px;
                         margin: auto;
+                        @media (max-width: 600px){
+                            font-size: 13px;
+                        }
                     }
             }
             
@@ -284,23 +396,103 @@ p.con-bullet {
     margin-right: auto;
     margin-top: -60px;
     @media (max-width: 600px){
-        font-size: 20px !important;
+        font-size: 10px !important;
         line-height: 1.2;
-        width: calc(100% - 80px);
+        width: calc(100% - 120px);
         justify-content: center;
         margin-bottom: 30px;
+        margin-top: 0px;
     }
 
     }
 
 .newInfo{
     padding: 8vw;
+    @media (max-width: 600px){
+        padding: 60px;
+    }
     p{
     font-family: "Raleway";
     font-weight: 600;
     font-size: 2vw;
-    color: white
+    color: white;
+    @media (max-width: 600px){
+        font-size: 11px;
     }
+    }
+}
+
+.desktop{
+  @media (max-width: 600px){
+     display: none !important;
+     
+  }
+}
+
+.mobile{
+  display: none;
+  @media (max-width: 600px){
+     display: block;
+  }
+}
+
+.titleMobile {
+    font-size: 35px;
+}
+
+.secondTextMobile{
+    font-size: 25px !important;
+}
+
+.lineLeft{
+    @media (max-width: 600px){
+     margin-left: -60px;
+     width: 120%;
+  }
+}
+
+.textGarden{
+    .textInfoGeneral {
+        @media (max-width: 600px){
+            font-size: 11px;
+            margin-top: 1rem !important;
+        }
+    }
+}
+
+#titleLeft{
+    @media (max-width: 600px){
+     display: flex !important;
+     margin-left: auto !important;
+     padding-right: 0px;
+     margin-bottom: 1rem !important;
+  }
+}
+
+.lineRight{
+    @media (max-width: 600px){
+     margin-right: -60px;
+     width: 120%;
+  }
+}
+
+.textPhoto{
+    @media (max-width: 600px){
+        font-size: 11px;
+        margin-top: 0px !important;
+    }
+}
+
+#second{
+    @media (max-width: 600px){
+        p{
+            margin-top: 0.5rem !important;
+        }
+        .titleGarden{
+            margin-bottom: 0px;
+        }
+    }
+    
 }
 
 
