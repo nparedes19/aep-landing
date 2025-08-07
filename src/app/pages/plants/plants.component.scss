@@ -495,4 +495,11 @@ p.con-bullet {
     
 }
 
+.trees{
+    height: 390px !important;
+    @media (max-width: 600px){
+        height: 315px !important;
+    }
+}
+
 

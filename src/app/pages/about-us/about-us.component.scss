@@ -5,8 +5,47 @@
   background-color: black;
   .content{
     padding-top: 170px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    .bigRaleway{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    .boxLogo{
+        position: relative;
+        .textBox{
+            width: 70%;
+            position:absolute;
+            z-index: 2;
+        }
+        img{
+            position: relative;
+            top: 228px;
+        }
+    }
+    .secondBoxInfo{
+        margin-top: 300px;
+        .box{
+            width: 40%;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+        }
+        .boxSecond{
+            width: 40%;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .text{
+            width: 60%;
+            text-align: right;
+            font-weight: 500;
+        }
+        .textSecond{
+            width: 60%;
+            text-align: left;
+            font-weight: 500;
+        }
+    }
     .fistBox{
         .boxImg{   
             width: 100%;
@@ -24,7 +63,7 @@
         .btnSend{
             background-color: transparent !important;
             font-family: "Raleway";
-            font-size: 1.5vw;
+            font-size: 2vw;
             border-radius: 999px;
             padding: 10px 30px;
             font-weight: 600;
@@ -36,10 +75,15 @@
             margin-left: auto;
             margin-right: auto;
             margin-top: 80px;
-            margin-bottom: 200px;
+            margin-bottom: 80px;
         }
     }
   }
+}
+
+.mt-50{
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
 }
 
 

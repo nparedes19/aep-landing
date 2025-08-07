@@ -8,6 +8,7 @@
       position: relative;
       @media (max-width: 600px){
            margin-top: 65px;
+           margin-bottom: 30px !important;
       }
     }
     .textBox{
@@ -131,11 +132,18 @@
 .titleCategoryProject{
   margin-left: 60px;
   margin-bottom: 60px;
+  @media (max-width: 600px){
+    margin-left: 30px;
+    margin-bottom: 30px
+  }
   p{
     font-family: "Raleway";
     font-size: 5vw;
     font-weight: 600;
-    color: white
+    color: white;
+    @media (max-width: 600px){
+      font-size: 30px;
+    }
   }
   .lineTitle{
     display: flex;
@@ -151,11 +159,20 @@
 .titleCategoryProjectLeft{
   margin-right: 60px;
   margin-bottom: 60px;
+  @media (max-width: 600px){
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: -30px
+  }
   p{
     font-family: "Raleway";
     font-size: 5vw;
     font-weight: 600;
-    color: white
+    color: white;
+    @media (max-width: 600px){
+      font-size: 30px;
+      margin-right: 0px !important;
+    }
   }
   .lineTitle{
     display: flex;
@@ -167,6 +184,9 @@
 
 .textImg{
   font-size: 5vw !important;
+  @media (max-width: 600px){
+    font-size: 35px !important;
+  }
 }
 
 
