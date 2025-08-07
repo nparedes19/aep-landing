@@ -1,75 +1,62 @@
 <section class="page-container">
     <app-header></app-header>
     <main class="content">
-        <div class="boxPictures desktop">
+        <div class="boxPictures desktop position-relative">
             <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/banner-first.png" class="d-block w-100" alt="Primera foto del carrusel">
-                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
-                            <h5 class="biggerTextBakung mb-0">Design</h5>
-                            <p class="bigRaleway m-8">Solution</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/home2.jpg" class="d-block w-100" alt="Primera foto del carrusel">
-                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
-                            <h5 class="biggerTextBakung mb-0">Design</h5>
-                            <p class="bigRaleway m-8">Solution</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/home3.jpg" class="d-block w-100" alt="Primera foto del carrusel">
-                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
-                            <h5 class="biggerTextBakung mb-0">Design</h5>
-                            <p class="bigRaleway m-8">Solution</p>
-                        </div>
-                    </div>
+                <div class="carousel-item active">
+                    <img src="assets/banner-first.png" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/home2.jpg" class="d-block w-100" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/home3.jpg" class="d-block w-100" alt="Imagen 3">
+                </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
                 </button>
-                </div>
+            </div>
+            <div class="carousel-static-caption position-absolute top-50 start-50 translate-middle text-center text-white">
+                <h5 class="biggerTextBakung mb-0">Design</h5>
+                <p class="bigRaleway m-8">Solution</p>
+            </div>
         </div>
-        <div class="boxPictures mobile">
+        <div class="boxPictures mobile position-relative">
+            <!-- Carrusel -->
             <div id="carouselExampleRide1" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/mobile/HOME1.jpg" class="d-block w-100" alt="Primera foto del carrusel">
-                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
-                            <h5 class="biggerTextBakung mb-0 firstTextMobile">Design</h5>
-                            <p class="bigRaleway secondTextMobile">Solution</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/mobile/HOME2.jpg" class="d-block w-100" alt="Primera foto del carrusel">
-                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
-                            <h5 class="biggerTextBakung mb-0 firstTextMobile">Design</h5>
-                            <p class="bigRaleway secondTextMobile">Solution</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/mobile/HOME3.jpg" class="d-block w-100" alt="Primera foto del carrusel">
-                        <div class="carousel-caption-overlay d-flex flex-column h-100 align-items-center justify-content-center">
-                            <h5 class="biggerTextBakung mb-0 firstTextMobile">Design</h5>
-                            <p class="bigRaleway secondTextMobile">Solution</p>
-                        </div>
-                    </div>
+                <div class="carousel-item active">
+                    <img src="assets/mobile/HOME1.jpg" class="d-block w-100" alt="Primera foto del carrusel">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/mobile/HOME2.jpg" class="d-block w-100" alt="Segunda foto del carrusel">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/mobile/HOME3.jpg" class="d-block w-100" alt="Tercera foto del carrusel">
+                </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
                 </button>
-                </div>
+            </div>
+
+            <!-- Texto estático superpuesto -->
+            <div class="carousel-static-caption position-absolute top-50 start-50 translate-middle text-center text-white">
+                <h5 class="biggerTextBakung mb-0 firstTextMobile">Design</h5>
+                <p class="bigRaleway secondTextMobile">Solution</p>
+            </div>
         </div>
         <div class="boxInformation">
             <div class="w-100 firstBox">
@@ -83,7 +70,7 @@
         </div>
         <div class="boxPresentation clear-blue-background d-flex">
             <div class="boxPicture w-50">
-
+                <img src="assets/about-us-2.jpg" class="w-100">
             </div>
             <div class="boxText w-50">
                 <p class="textName">About us</p>
@@ -158,7 +145,7 @@
                     </div>
                 </div>
             </div>
-            <a href="/services" class="mt-5 learn-more d-flex subtitles-general black justify-content-center">Learn more</a>
+            <a href="/services" class="mt-5 learnMore d-flex subtitles-general black justify-content-center">Learn more</a>
         </div>
         <div class="boxServices mobile">        
             <div class="containerBoxes">
@@ -217,12 +204,12 @@
         <div class="boxPlants desktopPlants">
             <img src="assets/fondo_plants.png">
             <div class="text-container">
-                <p class="location d-flex my-auto subtitles-general">AUSTIN, TX.</p>
+                <p class="location d-flex my-auto learnMore">AUSTIN, TX.</p>
                 <div class="main-title">
                     <h1 class="native">Native</h1>
                     <h1 class="plants">Plants</h1>
                 </div>
-                <a href="/plants" class="learn-more d-flex my-auto subtitles-general white">Learn more</a>
+                <a href="/plants" class="learnMore d-flex my-auto subtitles-general white">Learn more</a>
             </div>
         </div>
         <div class="boxPlants mobilePlants">

@@ -5,6 +5,7 @@
   background-color: #1E1E1A;
   .content{
     .boxPictures{
+      position: relative;
       @media (max-width: 600px){
            margin-top: 65px;
       }
@@ -125,6 +126,47 @@
    @media (max-width: 600px){
     display: none !important;
   } 
+}
+
+.titleCategoryProject{
+  margin-left: 60px;
+  margin-bottom: 60px;
+  p{
+    font-family: "Raleway";
+    font-size: 5vw;
+    font-weight: 600;
+    color: white
+  }
+  .lineTitle{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.littleTextProjects{
+  font-size: 0.9vw !important;
+}
+
+.titleCategoryProjectLeft{
+  margin-right: 60px;
+  margin-bottom: 60px;
+  p{
+    font-family: "Raleway";
+    font-size: 5vw;
+    font-weight: 600;
+    color: white
+  }
+  .lineTitle{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 20px;
+  }
+}
+
+.textImg{
+  font-size: 5vw !important;
 }
 
 
