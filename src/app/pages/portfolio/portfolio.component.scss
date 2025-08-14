@@ -3,7 +3,10 @@
   display: flex;
   flex-direction: column;
   background-color: #1E1E1A;
-  .content{
+
+}
+
+.content{
     .boxPictures{
       position: relative;
       @media (max-width: 600px){
@@ -100,7 +103,6 @@
       }
     }
   }
-}
 
 .carousel-caption-overlay {
   position: absolute;

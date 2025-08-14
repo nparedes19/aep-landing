@@ -28,7 +28,7 @@
             <!-- Texto estático superpuesto -->
             <div class="carousel-static-caption position-absolute top-50 start-50 translate-middle text-center text-white">
                 <h5 class="biggerTextBakung mb-0">Native</h5>
-                <p class="bigRaleway m-20">Plants</p>
+                <p class="bigRaleway m-20">Landscapes</p>
             </div>
         </div>
         <div class="boxPictures mobile position-relative">
@@ -58,7 +58,7 @@
             <!-- Texto estático superpuesto -->
             <div class="carousel-static-caption position-absolute top-50 start-50 translate-middle text-center text-white">
                 <h5 class="biggerTextBakung mb-0 titleMobile">Native</h5>
-                <p class="bigRaleway m-20 secondTextMobile">Plants</p>
+                <p class="bigRaleway m-20 secondTextMobile">Landscapes</p>
             </div>
         </div>
         <div class="firtsInfo strong-blue-background">
@@ -103,10 +103,20 @@
         <div class="boxPhoto desktop">
             <img src="assets/BANNER_PLANTS.jpg" class="w-100">
             <div class="overlayText">
-                <P class="titlePhoto">Book your consultation design
-                    A Small Update Can Go a Long Way
-                    Looking to freshen things up?</P>
-                <P class="textInfoGeneral mt-4">You don’t need a big renovation to make your outdoor space feel special. A few thoughtful 
+                <div class="boxCircles">
+                    <div class="circleWord">
+                        <p class="mb-0">Design</p>
+                    </div>
+                    <div class="linePlants"></div>
+                    <div class="circleWord">
+                        <p class="mb-0">Build</p>
+                    </div>
+                    <div class="linePlants"></div>
+                    <div class="circleWord">
+                        <p class="mb-0">Maintain</p>
+                    </div>
+                </div>
+                <P class="textInfoGeneral textCircle">You don’t need a big renovation to make your outdoor space feel special. A few thoughtful 
                     touches like a native plant nook, seasonal blooms, or refreshed soil can bring new life and joy.
                     Our Fresh Touch Projects are designed for those who want meaningful changes without the big 
                     timeline or price tag.</P>
@@ -115,9 +125,19 @@
         <div class="boxPhoto mobile">
             <img src="assets/mobile/Banner-plants-mobile-abajo.jpg" class="w-100">
             <div class="overlayText">
-                <P class="titlePhoto">Book your consultation design
-                    A Small Update Can Go a Long Way
-                    Looking to freshen things up?</P>
+                <div class="boxCircles">
+                    <div class="circleWord">
+                        <p class="mb-0">Design</p>
+                    </div>
+                    <div class="linePlants"></div>
+                    <div class="circleWord">
+                        <p class="mb-0">Build</p>
+                    </div>
+                    <div class="linePlants"></div>
+                    <div class="circleWord">
+                        <p class="mb-0">Maintain</p>
+                    </div>
+                </div>
                 <P class="textInfoGeneral mt-4 textPhoto">You don’t need a big renovation to make your outdoor space feel special. A few thoughtful 
                     touches like a native plant nook, seasonal blooms, or refreshed soil can bring new life and joy.
                     Our Fresh Touch Projects are designed for those who want meaningful changes without the big 
@@ -186,27 +206,6 @@
                     <p class="mb-0 mr-5 titleDelivery">Scheduling:</p>
                     <p class="mb-0 texDelivery">We deliver Monday through Saturday, usually within 48 hours of your order.</p>
                 </div>
-                <div class="d-flex mb-4 mobile">
-                    <p class="mb-0 texDelivery"><span class="mb-0 mr-5 titleDelivery" >Scheduling:</span>We deliver Monday through Saturday, usually within 48 hours of your order.</p>
-                </div>
-                <div class="mb-4">
-                    <p class="mb-0 mr-5 con-bullet titleDelivery">Looking for Something Specific or Need Design Help?</p>
-                    <p class="mb-0 texDelivery">We’re happy to help you find the right plant or guide you with your landscape design.</p>
-                </div>
-                <div class="d-flex mb-4 desktop">
-                    <p class="mb-0 mr-5 con-bullet titleDelivery">Can’t find what you’re looking for?</p>
-                    <p class="mb-0 texDelivery">Let us know and we’ll do our best to track it down.</p>
-                </div>
-                <div class="d-flex mb-4 mobile">
-                    <p class="mb-0 texDelivery"><span class="mb-0 mr-5 con-bullet titleDelivery">Can’t find what you’re looking for?</span>Let us know and we’ll do our best to track it down.</p>
-                </div>
-                <div class="d-flex mb-4 desktop">
-                    <p class="mb-0 mr-5 con-bullet titleDelivery">Need design support?</p>
-                    <p class="mb-0 texDelivery">We’ll help you plan a space that feels right and looks beautiful.</p>
-                </div>
-                <div class="d-flex mb-4 mobile">
-                    <p class="mb-0 texDelivery"><span class="mb-0 mr-5 con-bullet titleDelivery">Need design support?</span>We’ll help you plan a space that feels right and looks beautiful.</p>
-                </div>
                 <div class="mt-6 emailBox">
                     <p class="mb-0 learnMore italic">{{email}}</p>
                     <p class="mb-0 learnMore italic">we’d love to hear about your project and explore how we can bring it to life.</p>
@@ -219,10 +218,13 @@
             </div>
             <div class="catalog">
                 <p class="title desktop">Native Plants and Design</p>
-                <div class="boxTitlePlants">
+                <p class="textCatalog">Our catalog features a curated selection of plants we work with, though availability may vary seasonally. Share your list with preferred species, quantities, and sizes, and we'll promptly confirm availability and secure your order for delivery.</p>
+                <div class="boxTitlePlants firstTitle">
                     <p class="titlePlants">Perennials</p>
+                    <i class="pi pi-arrow-down" (click)="openPer()" *ngIf="!perennialsOpen"></i>
+                    <i class="pi pi-arrow-up" (click)="openPer()" *ngIf="perennialsOpen"></i>
                 </div>
-                <div class="containerPlants">
+                <div class="containerPlants mb-3" *ngIf="perennialsOpen">
                     <div class="firstBox clear-blue-background" *ngFor="let plant of perennials">
                         <div class="secondBox">
                             <div class="thirdBox">
@@ -243,10 +245,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxTitlePlants mt-4">
+                <div class="boxTitlePlants">
                     <p class="titlePlants">Vines</p>
+                    <i class="pi pi-arrow-down" *ngIf="!vinesOpen" (click)="openVines()" ></i>
+                    <i class="pi pi-arrow-up" *ngIf="vinesOpen" (click)="openVines()"></i>
                 </div>
-                <div class="containerPlants">
+                <div class="containerPlants mb-3" *ngIf="vinesOpen">
                     <div class="firstBox clear-blue-background" *ngFor="let plant of vines">
                         <div class="secondBox">
                             <div class="thirdBox">
@@ -266,10 +270,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxTitlePlants mt-4">
+                <div class="boxTitlePlants">
                     <p class="titlePlants">Grasses</p>
+                    <i class="pi pi-arrow-down" *ngIf="!grassesOpen" (click)="openGrasses()"></i>
+                    <i class="pi pi-arrow-up" *ngIf="grassesOpen" (click)="openGrasses()"></i>
                 </div>
-                <div class="containerPlants">
+                <div class="containerPlants mb-3" *ngIf="grassesOpen">
                     <div class="firstBox clear-blue-background" *ngFor="let plant of grasses">
                         <div class="secondBox">
                             <div class="thirdBox">
@@ -289,10 +295,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxTitlePlants mt-4">
+                <div class="boxTitlePlants">
                     <p class="titlePlants">Shrubs</p>
+                    <i class="pi pi-arrow-down" *ngIf="!shrubsOpen" (click)="openShrubs()"></i>
+                    <i class="pi pi-arrow-up" *ngIf="shrubsOpen" (click)="openShrubs()"></i>
                 </div>
-                <div class="containerPlants">
+                <div class="containerPlants mb-3" *ngIf="shrubsOpen">
                     <div class="firstBox clear-blue-background" *ngFor="let plant of shrubs">
                         <div class="secondBox">
                             <div class="thirdBox">
@@ -312,10 +320,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxTitlePlants mt-4">
+                <div class="boxTitlePlants">
                     <p class="titlePlants">Cacti</p>
+                    <i class="pi pi-arrow-down" *ngIf="!cactiOpen" (click)="openCacti()"></i>
+                    <i class="pi pi-arrow-up" *ngIf="cactiOpen" (click)="openCacti()"></i>
                 </div>
-                <div class="containerPlants">
+                <div class="containerPlants" *ngIf="cactiOpen">
                     <div class="firstBox clear-blue-background" *ngFor="let plant of cacti">
                         <div class="secondBox">
                             <div class="thirdBox">
@@ -334,10 +344,12 @@
                         </div>
                     </div>
                 </div>
-                 <div class="boxTitlePlants mt-4">
+                 <div class="boxTitlePlants mb-3">
                     <p class="titlePlants">Succulents</p>
+                    <i class="pi pi-arrow-down" *ngIf="!succulentsOpen" (click)="openSucculents()"></i>
+                    <i class="pi pi-arrow-up" *ngIf="succulentsOpen" (click)="openSucculents()"></i>
                 </div>
-                <div class="containerPlants">
+                <div class="containerPlants mb-3" *ngIf="succulentsOpen">
                     <div class="firstBox clear-blue-background" *ngFor="let plant of succulents">
                         <div class="secondBox">
                             <div class="thirdBox">
@@ -357,10 +369,12 @@
                         </div>
                     </div>
                 </div>
-                 <div class="boxTitlePlants mt-4">
+                 <div class="boxTitlePlants">
                     <p class="titlePlants">Ornamental/Small Trees</p>
+                    <i class="pi pi-arrow-down" *ngIf="!ornamentalOpen" (click)="openOrnamental()"></i>
+                    <i class="pi pi-arrow-up" *ngIf="ornamentalOpen" (click)="openOrnamental()"></i>
                 </div>
-                <div class="containerPlants">
+                <div class="containerPlants mb-3" *ngIf="ornamentalOpen">
                     <div class="firstBox clear-blue-background trees" *ngFor="let plant of ornamental">
                         <div class="secondBox">
                             <div class="thirdBox">
@@ -384,10 +398,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="boxTitlePlants mt-4">
+                <div class="boxTitlePlants">
                     <p class="titlePlants">Shade trees</p>
+                    <i class="pi pi-arrow-down" *ngIf="!shadetreesOpen" (click)="openShade()"></i>
+                    <i class="pi pi-arrow-up" *ngIf="shadetreesOpen" (click)="openShade()"></i>
                 </div>
-                <div class="containerPlants">
+                <div class="containerPlants" *ngIf="shadetreesOpen">
                     <div class="firstBox clear-blue-background trees" *ngFor="let plant of shadetrees">
                         <div class="secondBox">
                             <div class="thirdBox">
@@ -402,7 +418,7 @@
                         </div>
                         <div class="boxFirstText">
                             <p class="firstText" *ngIf="plant.fiveGal">5 GAL: {{plant.fiveGal}}</p>
-                            <p class="firstText" *ngIf="plant.tenGal">15 GAL: {{plant.tenGal}}</p>
+                            <p class="firstText" *ngIf="plant.fifteenGal">15 GAL: {{plant.fifteenGal}}</p>
                             <p class="firstText" *ngIf="plant.thirtyGal">30 GAL: {{plant.thirtyGal}}</p>
                             <p class="firstText" *ngIf="plant.fortyFiveG24Box">45G/24" BOX: {{plant.fortyFiveG24Box}}</p>
                             <p class="firstText" *ngIf="plant.sixtyFiveGal">65 GAL: {{plant.sixtyFiveGal}}</p>

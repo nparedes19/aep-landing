@@ -3,228 +3,251 @@
   display: flex;
   flex-direction: column;
   background-color: black;
-  .content{
-    background-color: gray;
-    .firtsInfo{
-        padding: 7vw;
+ 
+}
+
+.content{
+background-color: gray;
+
+}
+
+.firtsInfo{
+    padding: 7vw;
+    @media (max-width: 600px){
+        padding: 60px;
+    }
+    p{
+        font-weight: 500;
+        color: white;
+        font-family: 'Bakung'; 
+        font-size: 3vw;
+        text-align: center;
+        line-height: 1;
         @media (max-width: 600px){
-           padding: 60px;
+            font-size: 20px;
+            margin-bottom: 0px;
+            line-height: 1.2;
         }
-        p{
-            font-weight: 500;
-            color: white;
-            font-family: 'Bakung'; 
-            font-size: 3vw;
-            text-align: center;
-            line-height: 1;
+        
+    }
+}
+.gardenBox{
+    background-color: white;
+    padding-bottom: 60px;
+    @media (max-width: 600px){
+        padding-bottom: 20px;
+    }
+    .containerImg{
+        padding: 10vw;
             @media (max-width: 600px){
-                font-size: 20px;
-                margin-bottom: 0px;
-                line-height: 1.2;
+            display: block !important;
+            padding: 60px;
+            padding-bottom: 30px;
             }
-            
+        img{
+            width: 40%;
+        @media (max-width: 600px){
+            width: 85%;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            }
+        }
+        .textGarden{
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            p{
+                margin-left: 80px;
+                @media (max-width: 600px){
+                    margin-left: 0px;
+                }
+            }
+            .titleGarden{
+                font-family: "Raleway";
+                font-weight: 600;
+                font-size: 3vw;
+                @media (max-width: 600px){
+                    font-size: 20px;
+                    margin-top: 1rem ;
+                }
+            }
+        }
+        .secondTextGarden{
+            p{
+                margin-left: 0px !important;
+                padding-right: 15px;
+                @media (max-width: 600px){
+                    padding-right: 0px;
+                    text-align: right;
+                    margin-bottom: 0rem !important;
+                }
+            }
         }
     }
-    .gardenBox{
-        background-color: white;
-        padding-bottom: 60px;
-        @media (max-width: 600px){
-            padding-bottom: 20px;
-        }
-        .containerImg{
-            padding: 10vw;
-             @media (max-width: 600px){
-                display: block !important;
-                padding: 60px;
-                padding-bottom: 30px;
-             }
-            img{
-                width: 40%;
-            @media (max-width: 600px){
-                width: 85%;
+}
+.boxPhoto{
+    position: relative;
+    img {
+        height: auto;
+        display: block;
+    }
+    .overlayText {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 80px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                @media (max-width: 600px){
+                padding: 40px;
+            }
+            .titlePhoto{
+                font-weight: 500;
+                color: white;
+                font-family: "Raleway"; 
+                font-size: 3vw;
+                text-align: center;
+                line-height: 1;
+                width: 70%;
                 display: flex;
                 margin-left: auto;
                 margin-right: auto;
-             }
-            }
-            .textGarden{
-                justify-content: center;
-                display: flex;
-                flex-direction: column;
-                p{
-                    margin-left: 80px;
-                    @media (max-width: 600px){
-                        margin-left: 0px;
-                    }
-                }
-                .titleGarden{
-                    font-family: "Raleway";
-                    font-weight: 600;
-                    font-size: 3vw;
-                    @media (max-width: 600px){
-                        font-size: 20px;
-                        margin-top: 1rem ;
-                    }
+                @media (max-width: 600px){
+                    width: 90%;
+                    font-size: 20px;
                 }
             }
-            .secondTextGarden{
-                p{
-                    margin-left: 0px !important;
-                    padding-right: 15px;
-                    @media (max-width: 600px){
-                        padding-right: 0px;
-                        text-align: right;
-                        margin-bottom: 0rem !important;
-                    }
-                }
-            }
+    }
+}
+.secondText{
+    background-color: white;
+    padding: 8vw;
+    @media (max-width: 600px){
+        padding: 60px;
+    }
+    p{
+        color: #354B4B;
+        font-family: "Raleway";
+        font-weight: 500;
+            @media (max-width: 600px){
+            font-size: 11px;
         }
     }
-    .boxPhoto{
-        position: relative;
-        img {
-            height: auto;
-            display: block;
-        }
-        .overlayText {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                padding: 80px;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                 @media (max-width: 600px){
-                    padding: 40px;
-                }
-                .titlePhoto{
-                    font-weight: 500;
-                    color: white;
-                    font-family: "Raleway"; 
-                    font-size: 3vw;
-                    text-align: center;
-                    line-height: 1;
-                    width: 70%;
-                    display: flex;
-                    margin-left: auto;
-                    margin-right: auto;
-                    @media (max-width: 600px){
-                        width: 90%;
-                        font-size: 20px;
-                    }
-                }
-        }
-    }
-    .secondText{
-        background-color: white;
-        padding: 8vw;
+}
+.boxDelivery{
+    background-color: white;
+    .boxTitle{
+        border-bottom: 2px solid #354B4B;
+        border-top: 2px solid #354B4B;
+        padding-left: 6vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
         @media (max-width: 600px){
-            padding: 60px;
+            padding-left: 40px;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
         }
         p{
-            color: #354B4B;
             font-family: "Raleway";
-            font-weight: 500;
-             @media (max-width: 600px){
-                font-size: 11px;
+            font-weight: 600;
+            color: #354B4B;
+            font-size: 3vw;
+            @media (max-width: 600px){
+                font-size: 20px;
             }
         }
     }
-    .boxDelivery{
-        background-color: white;
-        .boxTitle{
-            border-bottom: 2px solid #354B4B;
-            border-top: 2px solid #354B4B;
-            padding-left: 6vw;
-            padding-top: 1vw;
-            padding-bottom: 1vw;
+    .textDelivery{
+        padding: 3vw 6vw;
+        @media (max-width: 600px){
+            padding: 40px ;
+        }
+        .emailBox{
+            text-align: center;
+            margin-top: 4rem;
             @media (max-width: 600px){
-                padding-left: 40px;
-                padding-top: 2vw;
-                padding-bottom: 2vw;
+                margin-top: 10px;
             }
             p{
-                font-family: "Raleway";
-                font-weight: 600;
-                color: #354B4B;
-                font-size: 3vw;
-                @media (max-width: 600px){
-                    font-size: 20px;
-                }
-            }
-        }
-        .textDelivery{
-            padding: 3vw 6vw;
-            @media (max-width: 600px){
-                padding: 40px ;
-            }
-            .emailBox{
-                text-align: center;
-                margin-top: 4rem;
-                @media (max-width: 600px){
-                    margin-top: 10px;
-                }
-                p{
-                    color:#354B4B;
-                    font-size: 1.5vw !important;
-                    @media (max-width: 600px){
-                        font-size: 15px !important ;
-                    }
-                }
-            }
-        }
-    }
-    .boxCatalog{
-        background-color: white;
-        .boxTitle{
-            padding-left: 6vw;
-            padding-top: 1vw;
-            padding-bottom: 1vw;
-            @media (max-width: 600px){
-                padding-left: 40px;
-                padding-top: 2vw;
-                padding-bottom: 2vw;
-            }
-            p{
-                font-family: "Raleway";
-                font-weight: 600;
-                color: white;
-                font-size: 3vw;
-                @media (max-width: 600px){
-                    font-size: 20px;
-                }
-            }
-        }
-        .catalog{
-            padding: 3vw 6vw;
-            @media (max-width: 600px){
-                padding: 40px;
-            }
-            .title{
                 color:#354B4B;
                 font-size: 1.5vw !important;
-                font-family: "Raleway";
-                font-weight: 700;
-                display: flex;
-                justify-content: right;
+                @media (max-width: 600px){
+                    font-size: 15px !important ;
+                }
             }
         }
     }
-  }
+}
+.boxCatalog{
+    background-color: white;
+    .boxTitle{
+        padding-left: 6vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        @media (max-width: 600px){
+            padding-left: 40px;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+        }
+        p{
+            font-family: "Raleway";
+            font-weight: 600;
+            color: white;
+            font-size: 3vw;
+            @media (max-width: 600px){
+                font-size: 20px;
+            }
+        }
+    }
+    .catalog{
+        padding: 3vw 6vw;
+        @media (max-width: 600px){
+            padding: 40px;
+        }
+        .title{
+            color:#354B4B;
+            font-size: 1.5vw !important;
+            font-family: "Raleway";
+            font-weight: 700;
+            display: flex;
+            justify-content: right;
+        }
+    }
 }
 
 .boxTitlePlants{
     width: 100%;
     border-bottom: 2px solid #354B4B;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    @media (max-width: 600px){
+        height: 70px;
+    }
+    i{
+        font-size: 35px;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 20px;
+        cursor: pointer;
+        @media (max-width: 600px){
+            font-size: 20px;
+        }
+    }
     .titlePlants{
         font-family: "Raleway";
         font-weight: 600;
-        color: white;
         font-size: 2.7vw;
         color: #354B4B;
+        display: flex;
+        margin-top: auto;
+        margin-bottom: auto;
         @media (max-width: 600px){
             font-size: 20px;
         }
@@ -339,7 +362,7 @@ p.con-bullet {
                 width: 80%;
                 line-height: 1.2;
                 font-family: "Raleway";
-                font-size: 15px;
+                font-size: 14px;
                 font-weight: 800;
                 @media (max-width: 600px){
                     font-size: 11px;
@@ -479,7 +502,9 @@ p.con-bullet {
 .textPhoto{
     @media (max-width: 600px){
         font-size: 11px;
-        margin-top: 0px !important;
+        margin-top: 30px !important;
+        text-align: center;
+        width: 98%;
     }
 }
 
@@ -496,10 +521,65 @@ p.con-bullet {
 }
 
 .trees{
-    height: 390px !important;
+    height: 405px !important;
     @media (max-width: 600px){
-        height: 315px !important;
+        height: 322px !important;
     }
+}
+
+
+.circleWord{
+    border-radius: 55px;
+    width: 300px;
+    border: solid 1px white;
+    padding: 15px;
+    @media (max-width: 600px){
+        padding: 15px;
+        width: 80px;
+    }
+    p{
+        display: flex;
+        margin: auto;
+        font-size: 2vw;
+        width: fit-content;
+        font-weight: 500;
+        @media (max-width: 600px){
+            margin-top: 0px;
+            font-size: 11px;
+        }
+    }
+}
+
+.textCircle{
+    text-align: center !important;
+    margin-top: 60px;
+}
+
+.textCatalog{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #354B4B;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @media (max-width: 600px){
+        font-size: 11px;
+    }}
+
+.firstTitle{
+    border-top: solid 2px #354B4B;
+}
+
+.boxCircles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.linePlants {
+  border-bottom: 1px solid white;
+  flex: 1;
 }
 
 

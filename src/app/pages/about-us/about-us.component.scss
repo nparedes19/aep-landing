@@ -7,24 +7,50 @@
     padding-top: 170px;
     padding-left: 100px;
     padding-right: 100px;
+    @media (max-width: 600px){
+      padding: 40px;
+      padding-top: 70px;
+    }
     .bigRaleway{
         font-size: 5vw;
         font-weight: 600;
+        @media (max-width: 600px){
+            font-size: 35px;
+        }
     }
     .boxLogo{
         position: relative;
         .textBox{
             width: 70%;
+            @media (max-width: 600px){
+                width: 100%;
+            }
             position:absolute;
             z-index: 2;
+            .biggerTextBakung{
+                @media (max-width: 600px){
+                    font-size: 20px;
+                }
+            }
+        }
+        p{
+            @media (max-width: 600px){
+                margin-top: 30px;
+            }
         }
         img{
             position: relative;
             top: 228px;
         }
+
     }
+    
     .secondBoxInfo{
         margin-top: 300px;
+         @media (max-width: 600px){
+           display: block !important;
+           margin-top: 330px;
+        }
         .box{
             width: 40%;
             border-bottom: 1px solid black;
@@ -39,11 +65,21 @@
             width: 60%;
             text-align: right;
             font-weight: 500;
+            @media (max-width: 600px){
+                margin-left: auto;
+                font-size: 11px;
+                width: 80%;
+            }
         }
         .textSecond{
             width: 60%;
             text-align: left;
             font-weight: 500;
+            @media (max-width: 600px){
+                margin-right: auto;
+                font-size: 11px;
+                width: 80%;
+            }
         }
     }
     .fistBox{
@@ -76,6 +112,11 @@
             margin-right: auto;
             margin-top: 80px;
             margin-bottom: 80px;
+            @media (max-width: 600px){
+                font-size: 15px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
         }
     }
   }
@@ -84,6 +125,54 @@
 .mt-50{
     margin-top: 100px !important;
     margin-bottom: 100px !important;
+}
+
+.desktop{
+  @media (max-width: 600px){
+     display: none !important;
+  }
+}
+
+.mobile{
+  display: none !important;
+  @media (max-width: 600px){
+     display: block !important;
+  }
+}
+
+.mobileLogo{
+    position: unset !important;
+}
+
+.firstLineBox{
+    width: 70%;
+    height: 30px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    margin-left: -40px;
+    margin-bottom: 15px;
+}
+
+.secondLineBox{
+    width: 40%;
+    height: 30px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    margin-left: 115px;
+}
+.thirdLineBox{
+    width: 40%;
+    height: 30px;
+    border-left: 1px solid black;
+    margin-left: 115px;
+    margin-bottom: 15px;
+}
+
+.mobileMarginTop{
+    @media (max-width: 600px){
+     margin-top: 0px !important;
+     margin-bottom: 0px !important;
+  }
 }
 
 

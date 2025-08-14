@@ -27,6 +27,22 @@ export class PlantsComponent {
 
   public vines: any = []
 
+  public perennialsOpen: boolean = false
+
+  public grassesOpen: boolean = false
+
+  public shrubsOpen: boolean = false
+
+  public cactiOpen: boolean = false
+
+  public succulentsOpen: boolean = false
+
+  public ornamentalOpen: boolean = false
+
+  public shadetreesOpen: boolean = false
+
+  public vinesOpen: boolean = false
+
   ngAfterViewInit() {
     setTimeout(() => {
     this.initSplide();
@@ -206,7 +222,7 @@ export class PlantsComponent {
       {"nombre":"Agave, lophantha 'Splendida'","oneGal":"","fiveGal":"$35,00","tenGal":"$130,00","src":"cacti/3.jpg"},
       {"nombre":"Agave, Whale's Tongue","oneGal":"","fiveGal":"$55,00","tenGal":"$145,00","src":"cacti/4.jpg"},
       {"nombre":"Hesperaloe, Red Yucca","oneGal":"","fiveGal":"$35,00","tenGal":"$130,00","src":"cacti/5.jpg"},
-      {"nombre":"Hesperaloe, Giant Red?","oneGal":"","fiveGal":"$35,00","tenGal":"$135,00","src":"cacti/6.jpg"},
+      {"nombre":"Hesperaloe, Giant Red","oneGal":"","fiveGal":"$35,00","tenGal":"$135,00","src":"cacti/6.jpg"},
       {"nombre":"Nolina, Lindheimer's","oneGal":"","fiveGal":"$35,00","tenGal":"$130,00","src":"cacti/7.jpg"},
       {"nombre":"Prickley Pear, Spineless","oneGal":"","fiveGal":"$35,00","tenGal":"$130,00","src":"cacti/8.jpg"},
       {"nombre":"Prickly Pear, Old Mexico","oneGal":"","fiveGal":"$35,00","tenGal":"$130,00","src":"cacti/9.jpg"},
@@ -289,5 +305,37 @@ export class PlantsComponent {
   getSrc(data:string){
     const src: string = 'assets/'+data
     return src
+  }
+
+  openPer(){
+    this.perennialsOpen = !this.perennialsOpen
+  }
+
+  openVines(){
+    this.vinesOpen = !this.vinesOpen
+  }
+
+  openGrasses(){
+    this.grassesOpen = !this.grassesOpen
+  }
+
+  openShrubs(){
+    this.shrubsOpen = !this.shrubsOpen
+  }
+
+   openCacti(){
+    this.cactiOpen = !this.cactiOpen
+  }
+
+   openSucculents(){
+    this.succulentsOpen = !this.succulentsOpen
+  }
+
+  openOrnamental(){
+    this.ornamentalOpen = !this.ornamentalOpen
+  }
+
+  openShade(){
+    this.shadetreesOpen = !this.shadetreesOpen
   }
 }

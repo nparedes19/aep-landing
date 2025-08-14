@@ -3,194 +3,195 @@
   display: flex;
   flex-direction: column;
   background-color: #1E1E1A;
-  .boxContainer{
-    padding-right: 60px;
-    padding-bottom: 60px;
-    @media (max-width: 600px){
-        display: block !important;
-        padding-right: 0px !important;
+}
+
+.boxContainer{
+padding-right: 60px;
+padding-bottom: 60px;
+@media (max-width: 600px){
+    display: block !important;
+    padding-right: 0px !important;
+}
+
+.boxForm{
+    padding-left: 3rem;
+    margin-top: auto;
+        margin-bottom: auto;
+        @media (max-width: 600px){
+        width: 100% !important;
+        padding-right: 45px;
+        padding-top: 40px;
+        padding-left: 45px;
     }
-    
-    .boxForm{
-        padding-left: 3rem;
-        margin-top: auto;
-         margin-bottom: auto;
-          @media (max-width: 600px){
-            width: 100% !important;
-            padding-right: 45px;
-            padding-top: 40px;
-            padding-left: 45px;
-        }
-            .title{
-                font-family: "Raleway";
-                font-weight: 600;
-                font-size: 4vw;
-                color: white;
-                @media (max-width: 600px){
-                    font-size: 25px;
-                }
-            }
-    form{
-        label{
-            color: white;
+        .title{
             font-family: "Raleway";
-            font-size: 1.5vw;
-            display: flex;
-            margin-top: auto;
-            margin-bottom: auto;
-            @media (max-width: 600px){
-                font-size: 13px;
-            }
-        }
-        input{
-            background-color: transparent;
-            border: none;
-            color: white;
-            font-family: "Raleway";
-            font-size: 1.5vw;
-            @media (max-width: 600px){
-                font-size: 13px;
-            }
-        }
-        textarea{
-            background-color: transparent;
-            border: none;
-            color: white;
-            font-family: "Raleway";
-            font-size: 1.5vw;
-            width: 100%;
-            margin-left: 20px;
-            @media (max-width: 600px){
-            font-size: 13px;
-        }
-        }
-        .btnSend{
-            background-color: transparent !important;
-            font-family: "Raleway";
-            font-size: 1.5vw;
-            border-radius: 999px;
-            padding: 10px 30px;
             font-weight: 600;
-            border: 1px solid white;
-            margin-top: 30px;
-            display: flex;
+            font-size: 4vw;
+            color: white;
             @media (max-width: 600px){
-                font-size: 13px;
-                margin-left: auto;
-                margin-right: auto;
+                font-size: 25px;
             }
         }
-        div{
-            padding-top: 10px;
-            padding-bottom: 10px;
-            border-top: 1px solid white;
-        }
-        .message{
-            border-bottom: 1px solid white;
-        }
-    }
-    }
-
-    .boxImg{
-        @media (max-width: 600px){
-            width: 100% !important;
-        }
-    }
-
-  }
-  .boxMap{
-    margin-top: 40px;
-    @media (max-width: 600px){
-        display: block !important;
-        margin-top: 0px;
-    }
-    .containerMap{
-        padding-left: 60px;
-        padding-right: 60px;
-        width: 60%;
-        @media (max-width: 600px){
-            width: 100%;
-            padding-left: 0px;
-            padding-right: 0px;
-            margin-top: 40px;
-        }
-        iframe{
-          width: 100%;
-        @media (max-width: 600px){
-            height: 315px;
-        }
-
-        }
-    }
-  }
-  .containerText{
-    align-content: center;
-    padding-left: 90px;
-    margin-right: auto;
-    @media (max-width: 600px){
-        display: flex;               /* activa el modo flex en el contenedor */
-        justify-content: center;     /* centra horizontalmente */
-        align-items: center;  
-        flex-direction: column;
-        padding-left: 0px;
-    }
-    .firstTitle{
-        font-size: 1.5vw;
-        font-weight: 500;
+form{
+    label{
+        color: white;
         font-family: "Raleway";
-        @media (max-width: 600px){
-            font-size: 13px;
-        }
-    }
-    i{
-        font-size: 20px;
+        font-size: 1.5vw;
         display: flex;
         margin-top: auto;
         margin-bottom: auto;
-        margin-right: 10px;
-    }
-    .secdonTitle{
-        font-size: 1.2vw;
-        font-weight: 500;
-        font-family: "Raleway";
-        margin-left: 25px;
-        @media (max-width: 600px){
-            font-size: 12px;
-            margin-left: 0px;
-        }
-    }
-  }
-  .boxConversation{
-    padding-left: 90px;
-    padding-right: 60px;
-    padding-bottom: 60px;
-    padding-top: 170px;
-    @media (max-width: 600px){
-        padding: 45px;
-        padding-top: 80px;
-    }
-    .title{
-        font-family: "Raleway";
-        font-weight: 600;
-        font-size: 3vw;
-        color: white;
-        margin-bottom: 2rem;
-        @media (max-width: 600px){
-            font-size: 25px;
-            line-height: 1.2;
-        }
-    }
-    .text{
-        font-size: 1.5vw;
-        font-weight: 400;
-        font-family: "Raleway";
-        line-height: 1.2;
         @media (max-width: 600px){
             font-size: 13px;
-            margin-top: 20px !important;
         }
     }
-  }
+    input{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-family: "Raleway";
+        font-size: 1.5vw;
+        @media (max-width: 600px){
+            font-size: 13px;
+        }
+    }
+    textarea{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-family: "Raleway";
+        font-size: 1.5vw;
+        width: 100%;
+        margin-left: 20px;
+        @media (max-width: 600px){
+        font-size: 13px;
+    }
+    }
+    .btnSend{
+        background-color: transparent !important;
+        font-family: "Raleway";
+        font-size: 1.5vw;
+        border-radius: 999px;
+        padding: 10px 30px;
+        font-weight: 600;
+        border: 1px solid white;
+        margin-top: 30px;
+        display: flex;
+        @media (max-width: 600px){
+            font-size: 13px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    div{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid white;
+    }
+    .message{
+        border-bottom: 1px solid white;
+    }
+}
+}
+
+.boxImg{
+    @media (max-width: 600px){
+        width: 100% !important;
+    }
+}
+
+}
+.boxMap{
+margin-top: 40px;
+@media (max-width: 600px){
+    display: block !important;
+    margin-top: 0px;
+}
+.containerMap{
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 60%;
+    @media (max-width: 600px){
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 40px;
+    }
+    iframe{
+        width: 100%;
+    @media (max-width: 600px){
+        height: 315px;
+    }
+
+    }
+}
+}
+.containerText{
+align-content: center;
+padding-left: 90px;
+margin-right: auto;
+@media (max-width: 600px){
+    display: flex;               /* activa el modo flex en el contenedor */
+    justify-content: center;     /* centra horizontalmente */
+    align-items: center;  
+    flex-direction: column;
+    padding-left: 0px;
+}
+.firstTitle{
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: "Raleway";
+    @media (max-width: 600px){
+        font-size: 13px;
+    }
+}
+i{
+    font-size: 20px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+.secdonTitle{
+    font-size: 1.2vw;
+    font-weight: 500;
+    font-family: "Raleway";
+    margin-left: 25px;
+    @media (max-width: 600px){
+        font-size: 12px;
+        margin-left: 0px;
+    }
+}
+}
+.boxConversation{
+padding-left: 90px;
+padding-right: 60px;
+padding-bottom: 60px;
+padding-top: 170px;
+@media (max-width: 600px){
+    padding: 45px;
+    padding-top: 80px;
+}
+.title{
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 3vw;
+    color: white;
+    margin-bottom: 2rem;
+    @media (max-width: 600px){
+        font-size: 25px;
+        line-height: 1.2;
+    }
+}
+.text{
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: "Raleway";
+    line-height: 1.2;
+    @media (max-width: 600px){
+        font-size: 13px;
+        margin-top: 20px !important;
+    }
+}
 }
 
 .w-60{
