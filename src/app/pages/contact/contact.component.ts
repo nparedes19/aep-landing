@@ -8,7 +8,7 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  public email: string = "aep.architecture@gmail.com"
+  public email: string = "aep.designsolutions@gmail.com"
 
   sendEmail(e: Event) {
     e.preventDefault();

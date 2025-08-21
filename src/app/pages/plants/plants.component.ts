@@ -9,7 +9,7 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
   styleUrl: './plants.component.scss'
 })
 export class PlantsComponent {
-  public email: string = 'Feel free to reach out at aep.architecture@gmail.com —'
+  public email: string = 'Feel free to reach out at aep.designsolutions@gmail.com —'
 
   public perennials: any = []
 
@@ -151,7 +151,7 @@ export class PlantsComponent {
       {"nombre":"Santolina, Gray","flat20ct":"$50,00","pot4":"","oneGal":"$12,00","twoGal":"$18,00","src":"perennials/84.jpg"},
       {"nombre":"Senna, Lindheimer's (Velvet-leaf)","flat20ct":"$50,00","pot4":"","oneGal":"$12,00","twoGal":"$18,00","src":"perennials/85.jpg"},
       {"nombre":"Showy Desert Marigold","flat20ct":"$55,00","pot4":"","oneGal":"$14,00","twoGal":"","src":"perennials/86.jpg"},
-      {"nombre":"Skeleton Leaf Goldeneye","flat20ct":"$50,00","pot4":"","oneGal":"$12,00","twoGal":"5g $35.00","src":"perennials/87.jpg"},
+      {"nombre":"Skeleton Leaf Goldeneye","flat20ct":"$50,00","pot4":"","oneGal":"$12,00","twoGal":"","fiveGalon":"$35.00","src":"perennials/87.jpg"},
       {"nombre":"Skullcap, Pink","flat20ct":"$50,00","pot4":"","oneGal":"$12,00","twoGal":"$18,00","src":"perennials/88.jpg"},
       {"nombre":"Skullcap, Purple","flat20ct":"$50,00","pot4":"","oneGal":"$12,00","twoGal":"$22,00","src":"perennials/89.jpg"},
       {"nombre":"Snake Herb","flat20ct":"$50,00","pot4":"","oneGal":"$12,00","twoGal":"","src":"perennials/90.jpg"},
@@ -175,8 +175,8 @@ export class PlantsComponent {
       {"nombre":"Grama, Sideoats","flat20ct":"$55,00","pot4":"","oneGal":"$14,00","twoGal":"","src":"grasses/2.jpg"},
       {"nombre":"Inland Seaoats","flat20ct":"$55,00","pot4":"","oneGal":"$14,00","twoGal":"$26,00","src":"grasses/3.jpg"},
       {"nombre":"Little Bluestem","flat20ct":"$55,00","pot4":"","oneGal":"$14,00","twoGal":"$28,00","src":"grasses/4.jpg"},
-      {"nombre":"Muhly, Bamboo","flat20ct":"","pot4":"","oneGal":"$14,00","twoGal":"3g $35.00","src":"grasses/5.jpg"},
-      {"nombre":"Muhly, Big","flat20ct":"","pot4":"","oneGal":"$14,00","twoGal":"5g $40.00","src":"grasses/6.jpg"},
+      {"nombre":"Muhly, Bamboo","flat20ct":"","pot4":"","oneGal":"$14,00","twoGal":"","threeGal":"$35.00","src":"grasses/5.jpg"},
+      {"nombre":"Muhly, Big","flat20ct":"","pot4":"","oneGal":"$14,00","twoGal":"","fiveGal":"$40.00","src":"grasses/6.jpg"},
       {"nombre":"Muhly, Gulf Coast (pink)","flat20ct":"","pot4":"","oneGal":"$14,00","twoGal":"$24,00","src":"grasses/7.jpg"},
       {"nombre":"Muhly, Deer","flat20ct":"","pot4":"","oneGal":"$14,00","twoGal":"$24,00","src":"grasses/8.jpg"},
       {"nombre":"Sedge, Webberville","flat20ct":"$55,00","pot4":"","oneGal":"$14,00","twoGal":"$24,00","src":"grasses/9.jpg"},
@@ -191,12 +191,12 @@ export class PlantsComponent {
       {"nombre":"Beach Vitex","oneGal":"$15,00","fiveGal":"$30,00","tenGal":"","src":"shrubs/3.jpg"},
       {"nombre":"Bird of Paradise","oneGal":"","fiveGal":"$35,00","tenGal":"$130,00","src":"shrubs/4.jpg"},
       {"nombre":"Button Bush","oneGal":"$15,00","fiveGal":"$30,00","tenGal":"$120,00","src":"shrubs/5.jpg"},
-      {"nombre":"Carolina Buckthorn","oneGal":"$15,00","fiveGal":"3gal $35","tenGal":"","src":"shrubs/6.jpg"},
+      {"nombre":"Carolina Buckthorn","oneGal":"$15,00","fiveGal":"","threeGal":"$35","tenGal":"","src":"shrubs/6.jpg"},
       {"nombre":"Common Tree Senna","oneGal":"$15,00","fiveGal":"$30,00","tenGal":"$120,00","src":"shrubs/7.jpg"},
       {"nombre":"Coral Bean","oneGal":"$15,00","fiveGal":"$35,00","tenGal":"$120,00","src":"shrubs/8.jpg"},
       {"nombre":"Coralberry","oneGal":"$15,00","fiveGal":"$30,00","tenGal":"","src":"shrubs/9.jpg"},
       {"nombre":"Dwarf Barbados Cherry","oneGal":"$15,00","fiveGal":"$30,00","tenGal":"","src":"shrubs/10.jpg"},
-      {"nombre":"Dwarf Palmetto","oneGal":"","fiveGal":"3g $35","tenGal":"7gal $85","src":"shrubs/11.jpg"},
+      {"nombre":"Dwarf Palmetto","oneGal":"","fiveGal":"","threeGal":"$35","tenGal":"","sevenGal":"$85","src":"shrubs/11.jpg"},
       {"nombre":"Elbow Bush","oneGal":"$15,00","fiveGal":"$35,00","tenGal":"$120,00","src":"shrubs/12.jpg"},
       {"nombre":"Esperanza","oneGal":"$15,00","fiveGal":"$30,00","tenGal":"$120,00","src":"shrubs/13.jpg"},
       {"nombre":"Fragrant Mimosa","oneGal":"$15,00","fiveGal":"$30,00","tenGal":"$120,00","src":"shrubs/14.jpg"},
@@ -257,7 +257,7 @@ export class PlantsComponent {
       {"nombre":"Desert Willow, Bubba","fiveGal":"$45,00","tenGal":"$135,00","twentyGal":"","thirtyGal":"","fortyFiveG24Box":"$450,00","sixtyFiveGal":"$1200,00","oneHundredG30Box":"","src":"ornamental/6.jpg"},
       {"nombre":"Eve's Necklace","fiveGal":"$45,00","tenGal":"$135,00","twentyGal":"$250,00","thirtyGal":"","fortyFiveG24Box":"","sixtyFiveGal":"","oneHundredG30Box":"","src":"ornamental/7.jpg"},
       {"nombre":"Goldenball Leadtree","fiveGal":"$45,00","tenGal":"$145,00","twentyGal":"","thirtyGal":"","fortyFiveG24Box":"","sixtyFiveGal":"","oneHundredG30Box":"","src":"ornamental/8.jpg"},
-      {"nombre":"Huisache","fiveGal":"$45,00","tenGal":"15gal $165","twentyGal":"","thirtyGal":"","fortyFiveG24Box":"$400,00","sixtyFiveGal":"","oneHundredG30Box":"$700,00","src":"ornamental/9.jpg"},
+      {"nombre":"Huisache","fiveGal":"$45,00","tenGal":"","fifteenGal":"$165","twentyGal":"","thirtyGal":"","fortyFiveG24Box":"$400,00","sixtyFiveGal":"","oneHundredG30Box":"$700,00","src":"ornamental/9.jpg"},
       {"nombre":"Mexican Buckeye","fiveGal":"$45,00","tenGal":"$135,00","twentyGal":"","thirtyGal":"$450,00","fortyFiveG24Box":"$700,00","sixtyFiveGal":"","oneHundredG30Box":"$1300,00","src":"ornamental/10.jpg"},
       {"nombre":"Mexican Plum","fiveGal":"$50,00","tenGal":"$145,00","twentyGal":"","thirtyGal":"$550,00","fortyFiveG24Box":"$800,00","sixtyFiveGal":"","oneHundredG30Box":"","src":"ornamental/11.jpg"},
       {"nombre":"Possumhaw","fiveGal":"$50,00","tenGal":"$145,00","twentyGal":"$320,00","thirtyGal":"$450,00","fortyFiveG24Box":"$850,00","sixtyFiveGal":"","oneHundredG30Box":"","src":"ornamental/12.jpg"},

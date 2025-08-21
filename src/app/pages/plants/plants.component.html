@@ -217,7 +217,7 @@
                 <p class="d-flex my-auto">Catalog:</p>
             </div>
             <div class="catalog">
-                <p class="title desktop">Native Plants and Design</p>
+                <p class="title desktop">Native Texas Plants</p>
                 <p class="textCatalog">Our catalog features a curated selection of plants we work with, though availability may vary seasonally. Share your list with preferred species, quantities, and sizes, and we'll promptly confirm availability and secure your order for delivery.</p>
                 <div class="boxTitlePlants firstTitle">
                     <p class="titlePlants">Perennials</p>
@@ -241,6 +241,7 @@
                             <p class="firstText" *ngIf="plant.pot4">4” POT: {{plant.pot4}}</p>
                             <p class="firstText" *ngIf="plant.oneGal">1GAL: {{plant.oneGal}}</p>
                             <p class="firstText" *ngIf="plant.twoGal">2 GAL: {{plant.twoGal}}</p>
+                            <p class="firstText" *ngIf="plant.fiveGalon">5 GAL: {{plant.fiveGalon}}</p>
                             <p class="firstText" *ngIf="plant.flat20ct">4”/20CT FL: {{plant.flat20ct}}</p>
                         </div>
                     </div>
@@ -291,6 +292,8 @@
                         <div class="boxFirstText">
                             <p class="firstText" *ngIf="plant.oneGal">1 GAL: {{plant.oneGal}}</p>
                             <p class="firstText" *ngIf="plant.twoGal">2 GAL: {{plant.twoGal}}</p>
+                            <p class="firstText" *ngIf="plant.threeGal">3 GAL: {{plant.threeGal}}</p>
+                            <p class="firstText" *ngIf="plant.fiveGal">5 GAL: {{plant.fiveGal}}</p>
                             <p class="firstText" *ngIf="plant.flat20ct">4”/20CT FL: {{plant.flat20ct}}</p>
                         </div>
                     </div>
@@ -315,8 +318,10 @@
                         </div>
                         <div class="boxFirstText">
                             <p class="firstText" *ngIf="plant.oneGal">1 GAL: {{plant.oneGal}}</p>
+                            <p class="firstText" *ngIf="plant.threeGal">3 GAL: {{plant.threeGal}}</p>
                             <p class="firstText" *ngIf="plant.fiveGal">5 GAL: {{plant.fiveGal}}</p>
-                            <p class="firstText" *ngIf="plant.tenGal">10 GAL:: {{plant.tenGal}}</p>
+                            <p class="firstText" *ngIf="plant.sevenGal">7 GAL: {{plant.sevenGal}}</p>
+                            <p class="firstText" *ngIf="plant.tenGal">10 GAL: {{plant.tenGal}}</p>
                         </div>
                     </div>
                 </div>
@@ -390,6 +395,7 @@
                         <div class="boxFirstText">
                             <p class="firstText" *ngIf="plant.fiveGal">5 GAL: {{plant.fiveGal}}</p>
                             <p class="firstText" *ngIf="plant.tenGal">10 GAL: {{plant.tenGal}}</p>
+                            <p class="firstText" *ngIf="plant.fifteenGal">15 GAL: {{plant.fifteenGal}}</p>
                             <p class="firstText" *ngIf="plant.twentyGal">20 GAL: {{plant.twentyGal}}</p>
                             <p class="firstText" *ngIf="plant.thirtyGal">30 GAL: {{plant.thirtyGal}}</p>
                             <p class="firstText" *ngIf="plant.fortyFiveG24Box">45G/24" BOX: {{plant.fortyFiveG24Box}}</p>
