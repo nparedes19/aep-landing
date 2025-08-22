@@ -9,7 +9,7 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
   styleUrl: './plants.component.scss'
 })
 export class PlantsComponent {
-  public email: string = 'Feel free to reach out at aep.designsolutions@gmail.com —'
+  public email: string = 'Feel free to reach out at info.aepdesignsolutions@gmail.com —'
 
   public perennials: any = []
 

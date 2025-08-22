@@ -89,6 +89,9 @@
         line-height: 1;
         color: white;
         text-align: center;
+        @media (max-width: 600px){
+          font-size: 20px;
+      }
       }
       .line{
         border-bottom: 1px solid white;
